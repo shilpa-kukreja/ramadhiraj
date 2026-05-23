@@ -71,7 +71,7 @@ export default function Footer() {
               />
 
               <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                SafeLight Industries delivers advanced industrial lighting,
+                Ramadhiraj Power Systems delivers advanced industrial lighting,
                 safety systems, and EHS consultancy solutions for modern infrastructure.
               </p>
 
@@ -174,7 +174,7 @@ export default function Footer() {
         {/* BOTTOM BAR */}
         <div className="py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm">
-            © {currentYear} SafeLight Industries. All Rights Reserved.
+            © {currentYear} Ramadhiraj Power Systems. All Rights Reserved.
           </p>
 
           <div className="flex gap-6 text-sm text-gray-500">

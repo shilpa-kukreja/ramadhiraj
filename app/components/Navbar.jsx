@@ -170,7 +170,7 @@ export default function Navbar() {
                 className="flex items-center gap-2 hover:text-white transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                <span>+91 74800 35754</span>
+                <span>+91 7428855573</span>
               </a>
             </div>
           </div>
