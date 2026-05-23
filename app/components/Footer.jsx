@@ -27,24 +27,28 @@ export default function Footer() {
     ],
     category: [
   {
-    name: "Emergency Lights",
-    href: "/all-products?category=emergency",
-  },
-  {
-    name: "Exit Signs",
-    href: "/all-products?category=exit",
-  },
-  {
-    name: "Industrial LED",
+    name: "Industrial Emergency Light",
     href: "/all-products?category=industrial",
   },
   {
-    name: "Rechargeable",
-    href: "/all-products?category=rechargeable",
+    name: "Industrial Emergency Light RPS-EL 40W ",
+    href: "/all-products?category=emergency",
   },
   {
-    name: "Hazardous Area",
-    href: "/all-products?category=hazardous",
+    name: "Industrial Emergency Light SignBoard",
+    href: "/all-products?category=light",
+  },
+  {
+    name: "Flame Proof Industrial Emergency Light",
+    href: "/all-products?category=flame",
+  },
+  {
+    name: "Flood Light",
+    href: "/all-products?category=flood",
+  },
+  {
+    name: "Street Light",
+    href: "/all-products?category=street",
   },
 ],
   };
@@ -151,7 +155,7 @@ export default function Footer() {
               <div className="space-y-4 text-gray-400 text-sm">
 
                 <div className="flex gap-3">
-                  <HiOutlineLocationMarker className="text-[#e21d23] text-lg" />
+                  <HiOutlineLocationMarker className="text-[#e21d23] text-3xl" />
                   <p>UGF-73, Signature Street, Govindpuram, Ghaziabad – 201013</p>
                 </div>
 
