@@ -105,9 +105,17 @@ export default function Products() {
                           {product.specs}
                         </p>
 
-                        <span className="block w-full py-3.5 rounded-md bg-[#e21d23] text-white font-medium text-center group-hover:bg-red-700 transition">
-                          View Product
-                        </span>
+                          <div className="relative overflow-hidden rounded-md">
+  
+  {/* Shine Effect */}
+  <span className="absolute top-0 left-[-120%] h-full w-[50%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 z-10" />
+
+  <span className="relative block w-full py-3.5 rounded-md bg-[#e21d23] text-white font-medium text-center group-hover:bg-red-700 transition">
+    View Product
+  </span>
+
+</div>
+                        
                       </div>
                     </motion.div>
                   </Link>

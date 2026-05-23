@@ -974,18 +974,16 @@ export default function About() {
                   <span className="text-[#e21d23] inline-block">
                     Milestones
                   </span>
-                  
                 </motion.h2>
                 <div
-                className="w-20 h-1 mx-auto mt-4"
-                style={{ backgroundColor: "#e21d23" }}
-              ></div>
-               <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-                Driven by passion and expertise, our team is committed to your
-                safety
-              </p>
+                  className="w-20 h-1 mx-auto mt-4"
+                  style={{ backgroundColor: "#e21d23" }}
+                ></div>
+                <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+                  Driven by passion and expertise, our team is committed to your
+                  safety
+                </p>
               </div>
-              
             </div>
 
             {/* Continuous Marquee Timeline */}
@@ -1036,195 +1034,192 @@ export default function About() {
         </section>
 
         {/* Leadership Team */}
-     <section className="py-12 bg-gray-50 overflow-hidden">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    
-    {/* Heading */}
-    <motion.div
-      initial={{ opacity: 0, y: 70 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false, amount: 0.2 }}
-      transition={{ duration: 0.9 }}
-      className="text-center mb-16"
-    >
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">
-        Meet Our <span style={{ color: "#e21d23" }}>Experts</span>
-      </h2>
-
-      <motion.div
-        initial={{ width: 0 }}
-        whileInView={{ width: 80 }}
-        viewport={{ once: false }}
-        transition={{ duration: 1 }}
-        className="h-1 mx-auto"
-        style={{ backgroundColor: "#e21d23" }}
-      ></motion.div>
-
-      <motion.p
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        className="text-gray-600 mt-4 max-w-2xl mx-auto"
-      >
-        Driven by passion and expertise, our team is committed to your
-        safety
-      </motion.p>
-    </motion.div>
-
-    {/* Team Grid */}
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-      {teamMembers.map((member, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, y: 80 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.2 }}
-          transition={{
-            duration: 0.8,
-            delay: index * 0.12,
-          }}
-          whileHover={{
-            y: -12,
-          }}
-          className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
-        >
-          {/* Image Section */}
-          <div className="h-64 bg-gradient-to-br from-gray-200 to-gray-300 relative overflow-hidden">
-            
-            {/* Animated Background Glow */}
+        <section className="py-12 bg-gray-50 overflow-hidden">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Heading */}
             <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 0.2 }}
-              viewport={{ once: false }}
-              transition={{ duration: 1 }}
-              className="absolute inset-0 bg-red-500 blur-3xl"
-            />
-
-            {/* Placeholder Image */}
-            <motion.div
-              initial={{ scale: 0.7, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              viewport={{ once: false }}
-              transition={{
-                duration: 0.8,
-                delay: index * 0.15,
-              }}
-              className="absolute inset-0 flex items-center justify-center text-6xl"
-            >
-              👤
-            </motion.div>
-          </div>
-
-          {/* Content */}
-          <div className="p-6">
-            
-            <motion.h3
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 70 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
-              transition={{
-                duration: 0.6,
-                delay: 0.2 + index * 0.1,
-              }}
-              className="text-xl font-bold text-gray-900 mb-1"
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.9 }}
+              className="text-center mb-16"
             >
-              {member.name}
-            </motion.h3>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">
+                Meet Our <span style={{ color: "#e21d23" }}>Experts</span>
+              </h2>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
-              transition={{
-                duration: 0.6,
-                delay: 0.3 + index * 0.1,
-              }}
-              className="text-sm font-semibold mb-2"
-              style={{ color: "#e21d23" }}
-            >
-              {member.role}
-            </motion.p>
+              <motion.div
+                initial={{ width: 0 }}
+                whileInView={{ width: 80 }}
+                viewport={{ once: false }}
+                transition={{ duration: 1 }}
+                className="h-1 mx-auto"
+                style={{ backgroundColor: "#e21d23" }}
+              ></motion.div>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: false }}
-              transition={{
-                duration: 0.6,
-                delay: 0.4 + index * 0.1,
-              }}
-              className="text-xs text-gray-500 mb-3"
-            >
-              {member.experience}
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
-              transition={{
-                duration: 0.6,
-                delay: 0.5 + index * 0.1,
-              }}
-              className="text-gray-600 text-sm mb-4"
-            >
-              {member.bio}
-            </motion.p>
-
-            {/* Social Icons */}
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
-              transition={{
-                duration: 0.6,
-                delay: 0.6 + index * 0.1,
-              }}
-              className="flex gap-3"
-            >
-              <motion.a
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.95 }}
-                href={member.social.linkedin}
-                className="text-gray-400 hover:text-blue-600 transition-colors"
+              <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="text-gray-600 mt-4 max-w-2xl mx-auto"
               >
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.979 0 1.771-.773 1.771-1.729V1.729C24 .774 23.204 0 22.225 0z" />
-                </svg>
-              </motion.a>
-
-              <motion.a
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.95 }}
-                href={`mailto:${member.email}`}
-                className="text-gray-400 hover:text-red-600 transition-colors"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-              </motion.a>
+                Driven by passion and expertise, our team is committed to your
+                safety
+              </motion.p>
             </motion.div>
+
+            {/* Team Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {teamMembers.map((member, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 80 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: false, amount: 0.2 }}
+                  transition={{
+                    duration: 0.8,
+                    delay: index * 0.12,
+                  }}
+                  whileHover={{
+                    y: -12,
+                  }}
+                  className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+                >
+                  {/* Image Section */}
+                  <div className="h-64 bg-gradient-to-br from-gray-200 to-gray-300 relative overflow-hidden">
+                    {/* Animated Background Glow */}
+                    <motion.div
+                      initial={{ scale: 0.8, opacity: 0 }}
+                      whileInView={{ scale: 1, opacity: 0.2 }}
+                      viewport={{ once: false }}
+                      transition={{ duration: 1 }}
+                      className="absolute inset-0 bg-red-500 blur-3xl"
+                    />
+
+                    {/* Placeholder Image */}
+                    <motion.div
+                      initial={{ scale: 0.7, opacity: 0 }}
+                      whileInView={{ scale: 1, opacity: 1 }}
+                      viewport={{ once: false }}
+                      transition={{
+                        duration: 0.8,
+                        delay: index * 0.15,
+                      }}
+                      className="absolute inset-0 flex items-center justify-center text-6xl"
+                    >
+                      👤
+                    </motion.div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-6">
+                    <motion.h3
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: false }}
+                      transition={{
+                        duration: 0.6,
+                        delay: 0.2 + index * 0.1,
+                      }}
+                      className="text-xl font-bold text-gray-900 mb-1"
+                    >
+                      {member.name}
+                    </motion.h3>
+
+                    <motion.p
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: false }}
+                      transition={{
+                        duration: 0.6,
+                        delay: 0.3 + index * 0.1,
+                      }}
+                      className="text-sm font-semibold mb-2"
+                      style={{ color: "#e21d23" }}
+                    >
+                      {member.role}
+                    </motion.p>
+
+                    <motion.p
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: false }}
+                      transition={{
+                        duration: 0.6,
+                        delay: 0.4 + index * 0.1,
+                      }}
+                      className="text-xs text-gray-500 mb-3"
+                    >
+                      {member.experience}
+                    </motion.p>
+
+                    <motion.p
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: false }}
+                      transition={{
+                        duration: 0.6,
+                        delay: 0.5 + index * 0.1,
+                      }}
+                      className="text-gray-600 text-sm mb-4"
+                    >
+                      {member.bio}
+                    </motion.p>
+
+                    {/* Social Icons */}
+                    <motion.div
+                      initial={{ opacity: 0, y: 15 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: false }}
+                      transition={{
+                        duration: 0.6,
+                        delay: 0.6 + index * 0.1,
+                      }}
+                      className="flex gap-3"
+                    >
+                      <motion.a
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.95 }}
+                        href={member.social.linkedin}
+                        className="text-gray-400 hover:text-blue-600 transition-colors"
+                      >
+                        <svg
+                          className="w-5 h-5"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.979 0 1.771-.773 1.771-1.729V1.729C24 .774 23.204 0 22.225 0z" />
+                        </svg>
+                      </motion.a>
+
+                      <motion.a
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.95 }}
+                        href={`mailto:${member.email}`}
+                        className="text-gray-400 hover:text-red-600 transition-colors"
+                      >
+                        <svg
+                          className="w-5 h-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                          />
+                        </svg>
+                      </motion.a>
+                    </motion.div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </div>
-        </motion.div>
-      ))}
-    </div>
-  </div>
-</section>
+        </section>
 
         {/* Certifications Section */}
 
@@ -1234,16 +1229,16 @@ export default function About() {
 
           <div className="relative max-w-9xl mx-auto">
             {/* Heading */}
-           {/* Heading */}
-<motion.div
-  initial={{ opacity: 0, y: 80 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: false, amount: 0.2 }}
-  transition={{ duration: 0.9 }}
-  className="text-center mb-14 px-4"
->
-  {/* Badge */}
-  {/* 
+            {/* Heading */}
+            <motion.div
+              initial={{ opacity: 0, y: 80 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.9 }}
+              className="text-center mb-14 px-4"
+            >
+              {/* Badge */}
+              {/* 
   <motion.span
     initial={{ opacity: 0, scale: 0.8 }}
     whileInView={{ opacity: 1, scale: 1 }}
@@ -1255,50 +1250,49 @@ export default function About() {
   </motion.span>
   */}
 
-  {/* Heading */}
-  <motion.h2
-    initial={{ opacity: 0, y: 50 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: false }}
-    transition={{ duration: 0.9, delay: 0.2 }}
-    className="text-3xl md:text-5xl font-black text-gray-900 leading-tight"
-  >
-    Certifications &{" "}
-    
-    <motion.span
-      initial={{ opacity: 0, x: 30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: false }}
-      transition={{ duration: 0.8, delay: 0.5 }}
-      className="text-red-600 inline-block"
-    >
-      Accreditations
-    </motion.span>
-  </motion.h2>
+              {/* Heading */}
+              <motion.h2
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false }}
+                transition={{ duration: 0.9, delay: 0.2 }}
+                className="text-3xl md:text-5xl font-black text-gray-900 leading-tight"
+              >
+                Certifications &{" "}
+                <motion.span
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.8, delay: 0.5 }}
+                  className="text-red-600 inline-block"
+                >
+                  Accreditations
+                </motion.span>
+              </motion.h2>
 
-  {/* Sub Heading */}
-  <motion.p
-    initial={{ opacity: 0, y: 35 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: false }}
-    transition={{ duration: 0.8, delay: 0.4 }}
-    className="mx-auto mt-4 max-w-2xl text-sm md:text-base font-medium leading-relaxed text-gray-600"
-  >
-    Recognized by leading industry bodies for our commitment to
-    quality, compliance, and safety excellence.
-  </motion.p>
+              {/* Sub Heading */}
+              <motion.p
+                initial={{ opacity: 0, y: 35 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="mx-auto mt-4 max-w-2xl text-sm md:text-base font-medium leading-relaxed text-gray-600"
+              >
+                Recognized by leading industry bodies for our commitment to
+                quality, compliance, and safety excellence.
+              </motion.p>
 
-  {/* Animated Line */}
-  <div className="mt-6 flex justify-center">
-    <motion.div
-      initial={{ width: 0, opacity: 0 }}
-      whileInView={{ width: 80, opacity: 1 }}
-      viewport={{ once: false }}
-      transition={{ duration: 1, delay: 0.6 }}
-      className="h-1 rounded-full bg-red-600"
-    />
-  </div>
-</motion.div>
+              {/* Animated Line */}
+              <div className="mt-6 flex justify-center">
+                <motion.div
+                  initial={{ width: 0, opacity: 0 }}
+                  whileInView={{ width: 80, opacity: 1 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 1, delay: 0.6 }}
+                  className="h-1 rounded-full bg-red-600"
+                />
+              </div>
+            </motion.div>
             {/* MARQUEE */}
             <div className="relative overflow-hidden">
               {/* Left Fade */}
@@ -1408,93 +1402,96 @@ export default function About() {
         </section>
 
         {/* CTA Section */}
-       <section className="relative overflow-hidden py-12 bg-gradient-to-r from-gray-900 to-gray-800">
-  
-  {/* Background Glow Effects */}
-  <motion.div
-    initial={{ opacity: 0, scale: 0.6 }}
-    whileInView={{ opacity: 0.25, scale: 1 }}
-    viewport={{ once: false }}
-    transition={{ duration: 1.2 }}
-    className="absolute top-0 left-0 w-72 h-72 bg-red-500 rounded-full blur-3xl"
-  />
+        <section className="relative overflow-hidden py-12 bg-gradient-to-r from-gray-900 to-gray-800">
+          {/* Background Glow Effects */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.6 }}
+            whileInView={{ opacity: 0.25, scale: 1 }}
+            viewport={{ once: false }}
+            transition={{ duration: 1.2 }}
+            className="absolute top-0 left-0 w-72 h-72 bg-red-500 rounded-full blur-3xl"
+          />
 
-  <motion.div
-    initial={{ opacity: 0, scale: 0.6 }}
-    whileInView={{ opacity: 0.2, scale: 1 }}
-    viewport={{ once: false }}
-    transition={{ duration: 1.2, delay: 0.2 }}
-    className="absolute bottom-0 right-0 w-72 h-72 bg-white rounded-full blur-3xl"
-  />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.6 }}
+            whileInView={{ opacity: 0.2, scale: 1 }}
+            viewport={{ once: false }}
+            transition={{ duration: 1.2, delay: 0.2 }}
+            className="absolute bottom-0 right-0 w-72 h-72 bg-white rounded-full blur-3xl"
+          />
 
-  <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-    
-    {/* Heading */}
-    <motion.h2
-      initial={{ opacity: 0, y: 70 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false, amount: 0.2 }}
-      transition={{ duration: 0.9 }}
-      className="text-3xl md:text-4xl font-bold text-white mb-4"
-    >
-      Ready to Enhance Your Workplace Safety?
-    </motion.h2>
+          <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            {/* Heading */}
+            <motion.h2
+              initial={{ opacity: 0, y: 70 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.9 }}
+              className="text-3xl md:text-4xl font-bold text-white mb-4"
+            >
+              Ready to Enhance Your Workplace Safety?
+            </motion.h2>
 
-    {/* Paragraph */}
-    <motion.p
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false }}
-      transition={{ duration: 0.8, delay: 0.2 }}
-      className="text-xl text-gray-300 mb-8"
-    >
-      Join hundreds of satisfied clients who trust us for their safety
-      needs
-    </motion.p>
+            {/* Paragraph */}
+            <motion.p
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-xl text-gray-300 mb-8"
+            >
+              Join hundreds of satisfied clients who trust us for their safety
+              needs
+            </motion.p>
 
-    {/* Buttons */}
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false }}
-      transition={{ duration: 0.8, delay: 0.4 }}
-      className="flex flex-col sm:flex-row gap-4 justify-center"
-    >
-      {/* Contact Button */}
-      <motion.div
-        whileHover={{
-          scale: 1.05,
-          y: -3,
-        }}
-        whileTap={{ scale: 0.96 }}
-      >
-        <Link
-          href="/contact"
-          className="inline-flex items-center justify-center px-8 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-red-500/30"
-          style={{ backgroundColor: "#e21d23" }}
-        >
-          Contact Our Experts
-        </Link>
-      </motion.div>
+            {/* Buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center"
+            >
+              {/* Contact Button */}
+           <motion.div
+  whileHover={{
+    scale: 1.05,
+    y: -3,
+  }}
+  whileTap={{ scale: 0.96 }}
+>
+  <Link
+    href="/contact-us"
+    className="group relative overflow-hidden inline-flex items-center justify-center px-8 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-red-500/30"
+    style={{ backgroundColor: "#e21d23" }}
+  >
+    {/* Shine Effect */}
+    <span className="absolute top-0 left-[-120%] h-full w-[40%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
 
-      {/* Products Button */}
-      <motion.div
-        whileHover={{
-          scale: 1.05,
-          y: -3,
-        }}
-        whileTap={{ scale: 0.96 }}
-      >
-        <Link
-          href="/products"
-          className="inline-flex items-center justify-center px-8 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-300"
-        >
-          Explore Products
-        </Link>
-      </motion.div>
-    </motion.div>
-  </div>
-</section>
+    <span className="relative z-10">
+      Contact Our Experts
+    </span>
+  </Link>
+</motion.div>
+
+              {/* Products Button */}
+              <motion.div
+                whileHover={{
+                  scale: 1.05,
+                  y: -3,
+                }}
+                whileTap={{ scale: 0.96 }}
+              >
+                <Link
+                  href="/all-products"
+                  className="inline-flex items-center justify-center px-8 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-300"
+                >
+                  Explore Products
+                </Link>
+              </motion.div>
+            </motion.div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>

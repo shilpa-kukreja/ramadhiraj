@@ -254,17 +254,27 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-3">
-            <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-medium hover:border-[#e21d23] hover:text-[#e21d23] transition-all duration-200">
-              <FileText className="w-4 h-4" />
-              Brochure
-            </button>
+          <a
+  href="/brochure.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-medium hover:border-[#e21d23] hover:text-[#e21d23] transition-all duration-200"
+>
+  <FileText className="w-4 h-4" />
+  Brochure
+</a>
 
             <button
-              onClick={() => setIsModalOpen(true)}
-              className="px-6 py-3 rounded-xl bg-[#e21d23] text-white font-semibold shadow-lg shadow-red-500/20 hover:bg-[#c81a1f] hover:shadow-red-500/30 transition-all duration-300"
-            >
-              Get Consultation
-            </button>
+  onClick={() => setIsModalOpen(true)}
+  className="group relative overflow-hidden px-6 py-3 rounded-xl bg-[#e21d23] text-white font-semibold shadow-lg shadow-red-500/20 hover:bg-[#c81a1f] hover:shadow-red-500/30 transition-all duration-300"
+>
+  {/* Shine Effect */}
+  <span className="absolute top-0 left-[-120%] h-full w-[40%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
+
+  <span className="relative z-10">
+    Get Consultation
+  </span>
+</button>
           </div>
 
           {/* Mobile Toggle */}

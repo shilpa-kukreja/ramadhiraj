@@ -46,20 +46,17 @@ const scaleIn = {
 
 export default function About() {
   return (
-  
     <section className="relative py-12 bg-gray-100 overflow-hidden">
       {/* Soft Background Glow */}
       <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-amber-50/40 rounded-full blur-3xl" />
       <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-gray-50 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-
         {/* HEADER */}
         <motion.div
           variants={container}
           initial="hidden"
           whileInView="show"
-         
           viewport={{ once: true }}
           className="text-center max-w-4xl mx-auto mb-16"
         >
@@ -83,14 +80,14 @@ export default function About() {
             variants={fadeUp}
             className="text-gray-600 mt-4 text-lg leading-relaxed"
           >
-            We deliver certified industrial solutions combining engineering excellence,
-            compliance-driven manufacturing, and advanced EHS consulting services across India.
+            We deliver certified industrial solutions combining engineering
+            excellence, compliance-driven manufacturing, and advanced EHS
+            consulting services across India.
           </motion.p>
         </motion.div>
 
         {/* MAIN GRID */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-
           {/* IMAGE */}
           <motion.div
             variants={scaleIn}
@@ -123,39 +120,47 @@ export default function About() {
               <div className="w-16 h-0.5 bg-[#e21d23] mt-4" />
             </motion.div>
 
-            <motion.p variants={fadeRight} className="text-gray-600 leading-relaxed text-justify">
-              Ramadhiraj Power Systems Pvt. Ltd. specializes in industrial emergency lighting systems
-              designed to meet strict BIS certification standards, ensuring maximum safety and reliability
+            <motion.p
+              variants={fadeRight}
+              className="text-gray-600 leading-relaxed text-justify"
+            >
+              Ramadhiraj Power Systems Pvt. Ltd. specializes in industrial
+              emergency lighting systems designed to meet strict BIS
+              certification standards, ensuring maximum safety and reliability
               in mission-critical environments.
             </motion.p>
 
-            <motion.p variants={fadeRight} className="text-gray-600 leading-relaxed text-justify">
-              Our EHS consulting division helps organizations achieve ISO 9001, 14001, and 45001 compliance
-              through structured safety frameworks, audits, and end-to-end operational support.
+            <motion.p
+              variants={fadeRight}
+              className="text-gray-600 leading-relaxed text-justify"
+            >
+              Our EHS consulting division helps organizations achieve ISO 9001,
+              14001, and 45001 compliance through structured safety frameworks,
+              audits, and end-to-end operational support.
             </motion.p>
 
-            <motion.p variants={fadeRight} className="text-gray-600 leading-relaxed text-justify">
-              With a strong PAN India presence, we partner with industries to build safer,
-              compliant, and future-ready infrastructure systems.
+            <motion.p
+              variants={fadeRight}
+              className="text-gray-600 leading-relaxed text-justify"
+            >
+              With a strong PAN India presence, we partner with industries to
+              build safer, compliant, and future-ready infrastructure systems.
             </motion.p>
 
             {/* CTA BUTTON */}
             <motion.div variants={fadeUp} className="pt-6">
-              <button className="relative overflow-hidden px-5 py-3 rounded-md bg-[#e21d23] text-white font-medium tracking-wide shadow-lg group">
+              <button className="relative overflow-hidden px-5 py-3 rounded-md bg-[#e21d23] text-white font-medium tracking-wide shadow-lg">
+                {/* Shine Effect */}
+                <span className="absolute top-0 left-[-120%] h-full w-[50%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
 
-                {/* Moving white shine */}
-                <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-white/30 to-transparent" />
-
-                <Link href="about" className="relative z-10">
+                <Link href="/about" className="relative z-10">
                   Learn More
                 </Link>
-
               </button>
             </motion.div>
           </motion.div>
         </div>
       </div>
     </section>
-   
   );
 }

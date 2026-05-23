@@ -107,13 +107,18 @@ export default function Hero() {
             }`}
           >
             <Link
-              href="/contact-us"
-              className="bg-[#e21d23] hover:bg-[#c81a1f]
-              text-white font-semibold px-6 py-3
-              rounded-lg transition"
-            >
-              Request a Quote
-            </Link>
+  href="/contact-us"
+  className="group relative overflow-hidden bg-[#e21d23] hover:bg-[#c81a1f]
+  text-white font-semibold px-6 py-3
+  rounded-lg transition duration-300 inline-flex items-center justify-center"
+>
+  {/* Shine Effect */}
+  <span className="absolute top-0 left-[-120%] h-full w-[40%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
+
+  <span className="relative z-10">
+    Request a Quote
+  </span>
+</Link>
 
             <Link
               href="/all-products"

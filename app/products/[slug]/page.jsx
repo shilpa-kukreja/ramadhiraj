@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
@@ -121,13 +123,18 @@ export default function ProductDetailPage() {
 
               {/* Action buttons — one row */}
               <div className="grid grid-cols-2 gap-4 mt-10">
-                <button
-                  type="button"
-                  onClick={() => setIsModalOpen(true)}
-                  className="py-3.5 rounded-xl bg-[#e21d23] text-white font-semibold hover:bg-red-700 transition"
-                >
-                  Enquiry Form
-                </button>
+              <button
+  type="button"
+  onClick={() => setIsModalOpen(true)}
+  className="group relative overflow-hidden py-3.5 rounded-xl bg-[#e21d23] text-white font-semibold hover:bg-red-700 transition"
+>
+  {/* Shine Effect */}
+  <span className="absolute top-0 left-[-120%] h-full w-[40%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
+
+  <span className="relative z-10">
+    Enquiry Form
+  </span>
+</button>
 
                 <a
                   href={whatsappUrl}
@@ -135,7 +142,7 @@ export default function ProductDetailPage() {
                   rel="noopener noreferrer"
                   className="py-3.5 rounded-xl border-2 border-[#25D366] text-[#128C7E] font-semibold hover:bg-[#25D366]/10 transition flex items-center justify-center gap-2"
                 >
-                  <MessageCircle className="w-5 h-5" />
+                  <FaWhatsapp className="w-5 h-5" />
                   WhatsApp
                 </a>
               </div>
@@ -184,9 +191,15 @@ export default function ProductDetailPage() {
                         <p className="text-[#e21d23] font-semibold mt-3">
                           {item.price}
                         </p>
-                        <span className="mt-4 block w-full py-3 rounded-md bg-[#e21d23] text-white text-sm font-medium text-center group-hover:bg-red-700 transition">
-                          View Product
-                        </span>
+                      <span className="relative mt-4 flex items-center justify-center overflow-hidden w-full py-3 rounded-md bg-[#e21d23] text-white text-sm font-medium text-center group-hover:bg-red-700 transition">
+  
+  {/* Shine Effect */}
+  <span className="absolute top-0 left-[-120%] h-full w-[35%] animate-shine bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></span>
+
+  <span className="relative z-10">
+    View Product
+  </span>
+</span>
                       </div>
                     </article>
                   </Link>

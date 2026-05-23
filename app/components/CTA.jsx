@@ -1,6 +1,7 @@
 "use client";
 // components/CTA.jsx
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function CTA() {
   const [isVisible, setIsVisible] = useState(false);
@@ -45,18 +46,36 @@ export default function CTA() {
           {/* CTA Buttons */}
           <div className={`flex flex-wrap justify-center gap-4 mb-6 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
             {/* Primary Button */}
-            <button className="group relative px-6 py-2 rounded-lg font-semibold text-white transition-all duration-300 hover:shadow-lg hover:scale-105 overflow-hidden" style={{ backgroundColor: '#e21d23' }}>
-              <span className="relative z-10 flex items-center gap-2">
-                Request a Quote
-                <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </span>
-            </button>
+           <Link
+  href="/contact-us"
+  className="group relative px-6 py-2 rounded-lg font-semibold text-white transition-all duration-300 hover:shadow-lg hover:scale-105 overflow-hidden flex items-center justify-center"
+  style={{ backgroundColor: "#e21d23" }}
+>
+  {/* Shine Effect */}
+  <span className="absolute top-0 left-[-120%] h-full w-[40%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
+
+  <span className="relative z-10 flex items-center gap-2">
+    Request a Quote
+
+    <svg
+      className="w-5 h-5 transition-transform group-hover:translate-x-1"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M13 7l5 5m0 0l-5 5m5-5H6"
+      />
+    </svg>
+  </span>
+</Link>
 
             {/* Secondary Button */}
             <button className="px-6 py-2 rounded-lg font-semibold text-white border-2 border-white hover:bg-white hover:text-gray-900 transition-all duration-300">
-              Call Us: +91 98765 43210
+              Call Us: +91 74288 55573
             </button>
           </div>
 

@@ -159,24 +159,30 @@ export default function Blog() {
                     </p>
                   </div>
 
-                  <Link
+                <Link
   href={`/blog/${featuredBlog.slug}`}
-  className="flex items-center gap-2 bg-[#e21d23] hover:bg-black text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300"
+  className="group relative overflow-hidden flex items-center gap-2 bg-[#e21d23] hover:bg-black text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300"
 >
-  Read More
-  <svg
-    className="w-4 h-4"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-      d="M9 5l7 7-7 7"
-    />
-  </svg>
+  {/* Shine Effect */}
+  <span className="absolute top-0 left-[-120%] h-full w-[40%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
+
+  <span className="relative z-10 flex items-center gap-2">
+    Read More
+
+    <svg
+      className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M9 5l7 7-7 7"
+      />
+    </svg>
+  </span>
 </Link>
                 </div>
               </div>
