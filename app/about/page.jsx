@@ -1403,23 +1403,9 @@ export default function About() {
 
         {/* CTA Section */}
         <section className="relative overflow-hidden py-12 bg-gradient-to-r from-gray-900 to-gray-800">
-          {/* Background Glow Effects */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.6 }}
-            whileInView={{ opacity: 0.25, scale: 1 }}
-            viewport={{ once: false }}
-            transition={{ duration: 1.2 }}
-            className="absolute top-0 left-0 w-72 h-72 bg-red-500 rounded-full blur-3xl"
-          />
+          
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.6 }}
-            whileInView={{ opacity: 0.2, scale: 1 }}
-            viewport={{ once: false }}
-            transition={{ duration: 1.2, delay: 0.2 }}
-            className="absolute bottom-0 right-0 w-72 h-72 bg-white rounded-full blur-3xl"
-          />
-
+     
           <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
             {/* Heading */}
             <motion.h2
