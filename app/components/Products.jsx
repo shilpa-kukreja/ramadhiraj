@@ -99,7 +99,7 @@ export default function Products() {
                         <div className="mb-5">
                           <div className="w-12 h-[2px] bg-[#e21d23] mb-5" />
 
-                          <h3 className="text-[22px] font-semibold text-gray-900 leading-snug line-clamp-1">
+                          <h3 className="text-[18px] font-semibold text-gray-900 leading-snug line-clamp-1">
                             {product.name}
                           </h3>
                         </div>

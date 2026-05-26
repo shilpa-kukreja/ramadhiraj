@@ -28,10 +28,10 @@ export default function About() {
 
     // Counter animation
     const counters = {
-      years: 14,
-      projects: 500,
-      clients: 1200,
-      experts: 45,
+      years: 250,
+      projects: 75,
+      clients: 15,
+      experts: 20,
     };
 
     const duration = 2000; // 2 seconds
@@ -71,40 +71,52 @@ export default function About() {
   // Sample milestones data - replace with your actual data
   const milestones = [
     {
-      year: "2020",
-      title: "Foundation & Vision",
+      year: "2023",
+      title: "Company Incorporation",
       description:
-        "Company founded with a mission to revolutionize digital experiences. Started with a small but passionate team of 5 engineers.",
-    },
-    {
-      year: "2021",
-      title: "First Major Product Launch",
-      description:
-        "Released our flagship platform to early access customers, achieving 100+ enterprise clients in the first quarter.",
-    },
-    {
-      year: "2022",
-      title: "Global Expansion",
-      description:
-        "Opened offices in London, Singapore, and San Francisco. Grew to 200+ employees and served 50+ countries.",
+        "Ramadhiraj Power Systems Pvt. Ltd. was officially established to deliver reliable industrial emergency lighting solutions for modern industries and infrastructure environments.",
     },
     {
       year: "2023",
-      title: "Industry Recognition",
+      title: "Manufacturing Development",
       description:
-        "Named 'Best Innovation' by TechCrunch and reached $10M ARR. Launched AI-powered features.",
+        "Initiated product development and manufacturing operations focused on industrial emergency lighting and safety illumination systems.",
     },
     {
       year: "2024",
-      title: "Strategic Acquisitions",
+      title: "Product Line Expansion",
       description:
-        "Acquired three complementary startups, expanding our product ecosystem and market reach.",
+        "Expanded the portfolio with emergency lights, exit signages, flood lights, street lights, and industrial lighting solutions.",
+    },
+    {
+      year: "2024",
+      title: "Industrial Market Reach",
+      description:
+        "Successfully supplied lighting systems for factories, warehouses, infrastructure projects, and commercial facilities.",
     },
     {
       year: "2025",
-      title: "Community Impact",
+      title: "Strengthening Distribution",
       description:
-        "Launched sustainability initiatives and opened source contributions, reaching 1M+ developers globally.",
+        "Enhanced supply capabilities and expanded industrial presence across multiple cities and sectors in India.",
+    },
+    {
+      year: "2025",
+      title: "Advanced Product Innovation",
+      description:
+        "Focused on developing durable, energy-efficient, and high-performance emergency lighting systems for critical applications.",
+    },
+    {
+      year: "2026",
+      title: "Expanding Industry Presence",
+      description:
+        "Continuing to build strong partnerships across industrial, commercial, healthcare, and infrastructure sectors.",
+    },
+    {
+      year: "2026",
+      title: "Future-Focused Growth",
+      description:
+        "Committed to advancing industrial emergency lighting solutions with a focus on safety, reliability, and long-term operational performance.",
     },
   ];
 
@@ -113,7 +125,7 @@ export default function About() {
     {
       title: "Innovation",
       description:
-        "Pioneering new safety technologies for tomorrow's challenges.",
+        "Continuously developing advanced industrial lighting solutions designed for modern safety and operational requirements.",
       color: "#e21d23",
       icon: (
         <svg
@@ -132,8 +144,9 @@ export default function About() {
       ),
     },
     {
-      title: "Integrity",
-      description: "Uncompromising ethics in every decision we make.",
+      title: "Reliability",
+      description:
+        "Delivering dependable emergency lighting systems built for consistent long-term performance.",
       color: "#0891b2",
       icon: (
         <svg
@@ -152,8 +165,9 @@ export default function About() {
       ),
     },
     {
-      title: "Collaboration",
-      description: "Stronger together with our clients and partners.",
+      title: "Quality Commitment",
+      description:
+        "Focused on maintaining high manufacturing standards across every product and solution.",
       color: "#7c3aed",
       icon: (
         <svg
@@ -172,8 +186,9 @@ export default function About() {
       ),
     },
     {
-      title: "Excellence",
-      description: "Relentless pursuit of the highest quality standards.",
+      title: "Customer Focus",
+      description:
+        "Building trusted relationships through responsive support, product excellence, and reliable service.",
       color: "#ea580c",
       icon: (
         <svg
@@ -246,7 +261,7 @@ export default function About() {
       name: "ISO 9001:2024",
       issuer: "International Organization for Standardization",
       description: "Quality Management Systems Certification",
-      image: "/123456.jpeg",
+      image: "/certificates/01.jpg",
       date: "2024",
       validUntil: "2027",
       status: "Active",
@@ -256,7 +271,7 @@ export default function About() {
       name: "BIS Certification",
       issuer: "Bureau of Indian Standards",
       description: "Certified for Emergency Lighting Systems",
-      image: "/certifications/iso9001.png",
+      image: "/certificates/02.jpg",
       date: "2023",
       validUntil: "2026",
       status: "Active",
@@ -266,7 +281,7 @@ export default function About() {
       name: "ISO 45001:2023",
       issuer: "International Organization for Standardization",
       description: "Occupational Health & Safety Management",
-      image: "/certifications/iso9001.png",
+      image: "/certificates/03.jpg",
       date: "2023",
       validUntil: "2026",
       status: "Active",
@@ -276,7 +291,7 @@ export default function About() {
       name: "CE Certification",
       issuer: "European Union",
       description: "Conformity with European Safety Standards",
-      image: "/certifications/iso9001.png",
+      image: "/certificates/04.jpg",
       date: "2024",
       validUntil: "2028",
       status: "Active",
@@ -286,19 +301,9 @@ export default function About() {
       name: "NSIC Registered",
       issuer: "National Small Industries Corporation",
       description: "Government Registered Vendor",
-      image: "/certifications/iso9001.png",
+      image: "/certificates/05.jpg",
       date: "2022",
       validUntil: "2027",
-      status: "Active",
-    },
-    {
-      id: 6,
-      name: "Make in India",
-      issuer: "Government of India",
-      description: "Approved Domestic Manufacturer",
-      image: "/certifications/iso9001.png",
-      date: "2023",
-      validUntil: "Lifetime",
       status: "Active",
     },
   ];
@@ -439,21 +444,17 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false }}
                   transition={{ duration: 0.7, delay: 0.3 }}
-                  className="text-gray-700 text-justify leading-relaxed mb-6 text-lg"
+                  className="text-gray-700 text-justify leading-relaxed mb-6"
                 >
-                  <span className="font-extrabold text-red-600 text-2xl">
+                  <span className="font-extrabold text-red-600 ">
                     Ramadhiraj
                   </span>{" "}
-                  Group of Companies is a multi-faceted organization driven by
-                  excellence in engineering, safety, and sustainability. Under
-                  the brand{" "}
-                  <span className="font-semibold text-[#1b3163]">
-                    Ramadhiraj Power Systems Pvt. Ltd.
-                  </span>
-                  , we are proud to be a BIS-certified company specializing in
-                  the manufacturing of industrial emergency lighting systems.
-                  Our lighting solutions are engineered for performance,
-                  reliability, and compliance with the highest safety standards.
+                  Group of Companies is committed to delivering reliable
+                  industrial solutions driven by quality, innovation, and
+                  performance. Under Ramadhiraj Power Systems Pvt. Ltd., we
+                  specialize in manufacturing industrial emergency lighting
+                  systems engineered for critical environments where safety and
+                  uninterrupted visibility are essential.{" "}
                 </motion.p>
 
                 <motion.p
@@ -463,15 +464,10 @@ export default function About() {
                   transition={{ duration: 0.7, delay: 0.5 }}
                   className="text-gray-700 text-justify leading-relaxed mb-6"
                 >
-                  In addition to manufacturing,{" "}
-                  <span className="font-semibold text-red-600">
-                    Ramadhiraj Safety Solutions
-                  </span>{" "}
-                  is a recognized leader in Environmental, Health, and Safety
-                  (EHS) consultancy services. As a certified EHS consultant with
-                  ISO 9001, ISO 14001, and ISO 45001 certifications, we provide
-                  end-to-end support for organizations aiming to meet legal,
-                  environmental, and workplace safety standards.
+                  With a strong focus on durability, efficiency, and dependable
+                  performance, our solutions are trusted across factories,
+                  warehouses, infrastructure projects, healthcare facilities,
+                  transportation networks, and commercial spaces.{" "}
                 </motion.p>
 
                 <motion.p
@@ -481,11 +477,24 @@ export default function About() {
                   transition={{ duration: 0.7, delay: 0.7 }}
                   className="text-gray-700 text-justify leading-relaxed mb-6"
                 >
-                  Our team of experts works closely with industrial clients
-                  across various sectors, offering tailored solutions in:
-                  Environmental impact assessments and compliance audits Health
-                  and safety risk management Regulatory documentation and
-                  reporting
+                  Backed by advanced manufacturing capabilities and industry
+                  expertise, we continue to provide lighting solutions that
+                  support operational safety, compliance, and long-term
+                  reliability. Our commitment to product quality and customer
+                  satisfaction helps us build lasting partnerships across
+                  diverse industrial sectors.
+                </motion.p>
+
+                <motion.p
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.7, delay: 0.7 }}
+                  className="text-gray-700 text-justify leading-relaxed"
+                >
+                  At Ramadhiraj, we believe in creating lighting systems that
+                  not only perform efficiently but also contribute to safer and
+                  more secure working environments.
                 </motion.p>
               </motion.div>
             </motion.div>
@@ -693,8 +702,8 @@ export default function About() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="mx-auto mt-4 max-w-2xl text-sm font-medium leading-7 text-gray-600 md:text-base"
               >
-                Built on innovation, integrity, and commitment towards
-                industrial safety excellence.
+                Driven by quality, innovation, and commitment to delivering
+                reliable industrial emergency lighting solutions.
               </motion.p>
 
               <div className="mt-5 flex items-center justify-center">
@@ -767,9 +776,10 @@ export default function About() {
                       </h3>
 
                       <p className="text-sm font-medium leading-8 text-gray-600 md:text-base">
-                        To empower industries with world-class safety solutions
-                        through innovative LED lighting and comprehensive EHS
-                        consultancy, ensuring every worker returns home safely.
+                        To deliver dependable industrial emergency lighting
+                        systems that enhance workplace safety, operational
+                        visibility, and long-term reliability across critical
+                        environments.
                       </p>
                     </motion.div>
 
@@ -782,13 +792,13 @@ export default function About() {
                       className="rounded-[28px] border border-gray-100 bg-gradient-to-br from-gray-50 to-white p-8 shadow-lg"
                     >
                       <h4 className="mb-4 text-2xl font-bold text-gray-900">
-                        Safety First
+                        Safety Commitment
                       </h4>
 
                       <p className="text-sm font-medium leading-7 text-gray-600 md:text-base">
-                        We continuously innovate and implement advanced
-                        industrial safety systems to create secure and
-                        sustainable workplaces.
+                        We focus on developing high-performance lighting
+                        solutions engineered to support safer industrial
+                        operations and uninterrupted emergency preparedness.
                       </p>
                     </motion.div>
                   </motion.div>
@@ -813,10 +823,10 @@ export default function About() {
                       </h3>
 
                       <p className="text-sm font-medium leading-8 text-gray-600 md:text-base">
-                        To be the global benchmark for industrial safety,
-                        creating a future where workplace accidents are
-                        eliminated through superior technology and unwavering
-                        commitment to safety standards.
+                        To become a trusted name in industrial emergency
+                        lighting by delivering innovative, energy-efficient, and
+                        reliable lighting solutions for modern industrial and
+                        infrastructure environments.
                       </p>
                     </motion.div>
 
@@ -829,13 +839,14 @@ export default function About() {
                       className="rounded-[28px] border border-gray-100 bg-gradient-to-br from-gray-50 to-white p-8 shadow-lg"
                     >
                       <h4 className="mb-4 text-2xl font-bold text-gray-900">
-                        Future Focused
+                        Future Ready Approach
                       </h4>
 
                       <p className="text-sm font-medium leading-7 text-gray-600 md:text-base">
-                        We envision industries powered by sustainable
-                        technology, global compliance, and zero-compromise
-                        safety systems.
+                        We are committed to developing advanced lighting systems
+                        that support operational safety, long-term performance,
+                        and evolving industrial requirements with a strong focus
+                        on quality and reliability.
                       </p>
                     </motion.div>
                   </motion.div>
@@ -910,10 +921,15 @@ export default function About() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Our Impact in <span style={{ color: "#e21d23" }}>Numbers</span>
+                Delivering Reliable{" "}
+                <span style={{ color: "#e21d23" }}>
+                  Industrial Lighting Solutions
+                </span>
               </h2>
               <p className="text-gray-300 text-lg">
-                The trust of thousands of clients worldwide
+                Supporting industrial safety with dependable emergency lighting
+                systems designed for performance, visibility, and operational
+                reliability.
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -924,7 +940,7 @@ export default function About() {
                 >
                   {counter.years}+
                 </div>
-                <div className="text-gray-300">Years of Excellence</div>
+                <div className="text-gray-300">Projects Delivered</div>
               </div>
               <div className="text-center">
                 <div
@@ -933,7 +949,7 @@ export default function About() {
                 >
                   {counter.projects}+
                 </div>
-                <div className="text-gray-300">Projects Completed</div>
+                <div className="text-gray-300">Industrial Clients</div>
               </div>
               <div className="text-center">
                 <div
@@ -942,7 +958,7 @@ export default function About() {
                 >
                   {counter.clients}+
                 </div>
-                <div className="text-gray-300">Happy Clients</div>
+                <div className="text-gray-300">Product Categories</div>
               </div>
               <div className="text-center">
                 <div
@@ -951,7 +967,7 @@ export default function About() {
                 >
                   {counter.experts}+
                 </div>
-                <div className="text-gray-300">Safety Experts</div>
+                <div className="text-gray-300">Cities Served Across India</div>
               </div>
             </div>
           </div>
@@ -968,7 +984,7 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false }}
                   transition={{ duration: 1, delay: 0.2 }}
-                  className="text-3xl md:text-5xl font-black text-gray-900 mt-2 leading-tight"
+                  className="text-3xl md:text-5xl font-black text-gray-900 mt-2 leading-tight text-center"
                 >
                   Company{" "}
                   <span className="text-[#e21d23] inline-block">
@@ -979,9 +995,9 @@ export default function About() {
                   className="w-20 h-1 mx-auto mt-4"
                   style={{ backgroundColor: "#e21d23" }}
                 ></div>
-                <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-                  Driven by passion and expertise, our team is committed to your
-                  safety
+                <p className="text-gray-600 mt-4 max-w-4xl mx-auto">
+                  Growing with innovation, reliability, and a commitment to
+                  delivering dependable industrial emergency lighting solutions.
                 </p>
               </div>
             </div>
@@ -1266,7 +1282,7 @@ export default function About() {
                   transition={{ duration: 0.8, delay: 0.5 }}
                   className="text-red-600 inline-block"
                 >
-                  Accreditations
+                  Industry Recognition
                 </motion.span>
               </motion.h2>
 
@@ -1278,8 +1294,9 @@ export default function About() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="mx-auto mt-4 max-w-2xl text-sm md:text-base font-medium leading-relaxed text-gray-600"
               >
-                Recognized by leading industry bodies for our commitment to
-                quality, compliance, and safety excellence.
+                Committed to delivering reliable industrial emergency lighting
+                solutions aligned with quality, safety, and industry-focused
+                standards.
               </motion.p>
 
               {/* Animated Line */}
@@ -1302,19 +1319,19 @@ export default function About() {
               <div className="absolute right-0 top-0 z-10 h-full w-24 bg-gradient-to-l from-white to-transparent"></div>
 
               <div className="marquee-wrapper">
-                <div className="marquee-track">
+                <div className="marquee-track min-w-max">
                   {[...certifications, ...certifications].map((cert, index) => (
                     <div
                       key={index}
-                      className="group mx-4 flex w-[280px] flex-shrink-0 cursor-pointer flex-col overflow-hidden rounded-[20px] border border-gray-100 bg-white shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
+                      className="group mx-4 flex min-w-[250px] w-[250px] mb-5 flex-shrink-0 cursor-pointer flex-col overflow-hidden rounded-[20px] border border-gray-100 bg-white shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
                       onClick={() => setSelectedImage(cert)}
                     >
                       {/* Image */}
-                      <div className="relative h-[210px] overflow-hidden bg-gray-50">
+                      <div className="relative h-[280px] overflow-hidden bg-gray-50">
                         <img
                           src={cert.image}
                           alt={cert.name}
-                          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                          className="h-80 w-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
 
                         {/* Overlay */}
@@ -1342,11 +1359,12 @@ export default function About() {
           {selectedImage && (
             <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
               {/* Close Button */}
+              {/* Close Button */}
               <button
                 onClick={() => setSelectedImage(null)}
-                className="absolute top-5 right-5 flex h-11 w-11 items-center justify-center rounded-full bg-white text-black shadow-lg transition hover:scale-110"
+                className="fixed top-4 right-4 md:top-5 md:right-5 z-[10000] flex h-12 w-12 items-center justify-center rounded-full bg-white text-black shadow-2xl transition hover:scale-110"
               >
-                <X className="h-5 w-5" />
+                <X className="h-6 w-6" />
               </button>
 
               {/* Preview Card */}
@@ -1380,8 +1398,9 @@ export default function About() {
 
             .marquee-track {
               display: flex;
-              width: max-content;
-              animation: marqueeScroll 28s linear infinite;
+              align-items: stretch;
+              width: fit-content;
+              animation: marquee 35s linear infinite;
               will-change: transform;
             }
 
@@ -1389,13 +1408,13 @@ export default function About() {
               animation-play-state: paused;
             }
 
-            @keyframes marqueeScroll {
-              0% {
-                transform: translate3d(0, 0, 0);
+            @keyframes marquee {
+              from {
+                transform: translateX(0);
               }
 
-              100% {
-                transform: translate3d(-50%, 0, 0);
+              to {
+                transform: translateX(-50%);
               }
             }
           `}</style>
@@ -1403,9 +1422,6 @@ export default function About() {
 
         {/* CTA Section */}
         <section className="relative overflow-hidden py-12 bg-gradient-to-r from-gray-900 to-gray-800">
-          
-
-     
           <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
             {/* Heading */}
             <motion.h2
@@ -1415,7 +1431,7 @@ export default function About() {
               transition={{ duration: 0.9 }}
               className="text-3xl md:text-4xl font-bold text-white mb-4"
             >
-              Ready to Enhance Your Workplace Safety?
+              Looking for Reliable Industrial Lighting Solutions?
             </motion.h2>
 
             {/* Paragraph */}
@@ -1426,8 +1442,9 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-xl text-gray-300 mb-8"
             >
-              Join hundreds of satisfied clients who trust us for their safety
-              needs
+              Connect with our team to discover dependable emergency lighting
+              systems designed for industrial safety, visibility, and
+              operational reliability.
             </motion.p>
 
             {/* Buttons */}
@@ -1439,26 +1456,24 @@ export default function About() {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               {/* Contact Button */}
-           <motion.div
-  whileHover={{
-    scale: 1.05,
-    y: -3,
-  }}
-  whileTap={{ scale: 0.96 }}
->
-  <Link
-    href="/contact-us"
-    className="group relative overflow-hidden inline-flex items-center justify-center px-8 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-red-500/30"
-    style={{ backgroundColor: "#e21d23" }}
-  >
-    {/* Shine Effect */}
-    <span className="absolute top-0 left-[-120%] h-full w-[40%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
+              <motion.div
+                whileHover={{
+                  scale: 1.05,
+                  y: -3,
+                }}
+                whileTap={{ scale: 0.96 }}
+              >
+                <Link
+                  href="/contact-us"
+                  className="group relative overflow-hidden inline-flex items-center justify-center px-8 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-red-500/30"
+                  style={{ backgroundColor: "#e21d23" }}
+                >
+                  {/* Shine Effect */}
+                  <span className="absolute top-0 left-[-120%] h-full w-[40%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
 
-    <span className="relative z-10">
-      Contact Our Experts
-    </span>
-  </Link>
-</motion.div>
+                  <span className="relative z-10">Get in Touch</span>
+                </Link>
+              </motion.div>
 
               {/* Products Button */}
               <motion.div
