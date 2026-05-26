@@ -266,7 +266,7 @@ export default function TermsConditionsPage() {
 
               <div className="mt-5 space-y-2 text-gray-800">
                 <p className="font-semibold">
-                  Ramadhiraj Power Systems Pvt. Ltd.
+                  Ramadhiraj Power Systems 
                 </p>
 
                 <p>
