@@ -9,22 +9,28 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import {
   categories,
-  productsByCategory,
+  defaultCategoryId,
+  isValidCategoryId,
+  getProductsForCategory,
   useCases,
   getProductImageSrc,
 } from "@/lib/products";
 
+function resolveCategoryId(urlCategory) {
+  if (urlCategory && isValidCategoryId(urlCategory)) return urlCategory;
+  return defaultCategoryId;
+}
+
 export default function ProductsContent() {
   const searchParams = useSearchParams();
   const categoryFromUrl = searchParams.get("category");
-  const [activeCategory, setActiveCategory] = useState(
-    categoryFromUrl || "emergency",
+  const [activeCategory, setActiveCategory] = useState(() =>
+    resolveCategoryId(categoryFromUrl),
   );
+  const activeProducts = getProductsForCategory(activeCategory);
 
   useEffect(() => {
-    if (categoryFromUrl) {
-      setActiveCategory(categoryFromUrl);
-    }
+    setActiveCategory(resolveCategoryId(categoryFromUrl));
   }, [categoryFromUrl]);
 
   return (
@@ -33,7 +39,7 @@ export default function ProductsContent() {
       <section className="w-full sm:mt-30">
         <div className=" w-full">
           <img
-            src="/industries/banner.png"
+            src="/allproduct/banner.jpg"
             alt="Industrial lighting banner"
             className="w-full h-40 sm:h-90 object-cover"
           />
@@ -85,7 +91,7 @@ export default function ProductsContent() {
               transition={{ duration: 0.5 }}
             >
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                {productsByCategory[activeCategory].map((product, index) => (
+                {activeProducts.map((product, index) => (
                   <Link
                     key={product.id}
                     href={`/products/${product.slug}`}

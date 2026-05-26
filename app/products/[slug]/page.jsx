@@ -3,13 +3,13 @@
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, MessageCircle } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-
 
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import ProductEnquiryModal from "../../components/ProductEnquiryModal";
+import ProductSpecifications from "../../components/ProductSpecifications";
 import {
   getProductBySlug,
   getProductImageSrc,
@@ -85,66 +85,69 @@ export default function ProductDetailPage() {
             Back to All Products
           </Link>
 
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
-            {/* Left — product image */}
-            <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
-              <div className="aspect-square sm:aspect-[4/3] lg:aspect-square">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 lg:items-stretch">
+            {/* Left — fixed aspect on mobile; full height on desktop */}
+            <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm aspect-[4/3] sm:aspect-[3/2] lg:aspect-auto lg:min-h-0 lg:max-h-[min(85vh,680px)] lg:h-full">
+              <div className="relative h-full w-full lg:min-h-[min(85vh,680px)]">
                 <img
                   src={getProductImageSrc(product.image)}
                   alt={product.name}
-                  className="w-full h-full object-cover"
+                  className="absolute inset-0 h-full w-full object-cover"
                 />
               </div>
             </div>
 
-            {/* Right — product details */}
-            <div className="bg-white rounded-2xl border border-gray-100 p-6 sm:p-8 shadow-sm">
-              <p className="text-sm font-medium text-[#e21d23] uppercase tracking-wide">
-                Model: {product.model}
-              </p>
+            {/* Right — page scroll on mobile; inner scroll + fixed buttons on lg+ */}
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm flex flex-col lg:max-h-[min(85vh,680px)] lg:h-full lg:overflow-hidden">
+              <div className="shrink-0 px-5 sm:px-7 pt-5 sm:pt-7 pb-3 border-b border-gray-100">
+                <h1 className="text-2xl sm:text-3xl font-semibold text-gray-900 leading-tight">
+                  {product.name}
+                </h1>
+                {product.specs ? (
+                  <p className="text-sm text-gray-500 mt-2">{product.specs}</p>
+                ) : null}
+              </div>
 
-              <h1 className="text-3xl sm:text-4xl font-semibold text-gray-900 mt-3 leading-tight">
-                {product.name}
-              </h1>
+              <div
+                className="px-5 sm:px-7 py-4 lg:flex-1 lg:min-h-0 lg:overflow-y-auto lg:overscroll-contain lg:scrollbar-thin"
+                aria-label="Product specifications"
+              >
+                {/* {product.shortDescription ? (
+                  <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                    {product.shortDescription}
+                  </p>
+                ) : null}
 
-              <p className="text-2xl sm:text-3xl font-bold text-[#e21d23] mt-5">
-                {product.price}
-              </p>
+                {product.longDescription ? (
+                  <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                    {product.longDescription}
+                  </p>
+                ) : null} */}
 
-              <p className="text-gray-600 text-lg leading-relaxed mt-5">
-                {product.shortDescription}
-              </p>
+                <ProductSpecifications items={product.specificationList} />
+              </div>
 
-              <p className="text-gray-600 leading-relaxed mt-6">
-                {product.longDescription}
-              </p>
+              <div className="shrink-0 px-5 sm:px-7 py-4 sm:py-5 border-t border-gray-100 bg-white">
+                <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                  <button
+                    type="button"
+                    onClick={() => setIsModalOpen(true)}
+                    className="group relative overflow-hidden py-3.5 rounded-xl bg-[#e21d23] text-white text-sm sm:text-base font-semibold hover:bg-red-700 transition"
+                  >
+                    <span className="absolute top-0 left-[-120%] h-full w-[40%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
+                    <span className="relative z-10">Enquiry Form</span>
+                  </button>
 
-              <p className="text-sm text-gray-500 mt-4">{product.specs}</p>
-
-              {/* Action buttons — one row */}
-              <div className="grid grid-cols-2 gap-4 mt-10">
-              <button
-  type="button"
-  onClick={() => setIsModalOpen(true)}
-  className="group relative overflow-hidden py-3.5 rounded-xl bg-[#e21d23] text-white font-semibold hover:bg-red-700 transition"
->
-  {/* Shine Effect */}
-  <span className="absolute top-0 left-[-120%] h-full w-[40%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
-
-  <span className="relative z-10">
-    Enquiry Form
-  </span>
-</button>
-
-                <a
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="py-3.5 rounded-xl border-2 border-[#25D366] text-[#128C7E] font-semibold hover:bg-[#25D366]/10 transition flex items-center justify-center gap-2"
-                >
-                  <FaWhatsapp className="w-5 h-5" />
-                  WhatsApp
-                </a>
+                  <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="py-3.5 rounded-xl border-2 border-[#25D366] text-[#128C7E] text-sm sm:text-base font-semibold hover:bg-[#25D366]/10 transition flex items-center justify-center gap-2"
+                  >
+                    <FaWhatsapp className="w-5 h-5 shrink-0" />
+                    WhatsApp
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -191,15 +194,12 @@ export default function ProductDetailPage() {
                         <p className="text-[#e21d23] font-semibold mt-3">
                           {item.price}
                         </p>
-                      <span className="relative mt-4 flex items-center justify-center overflow-hidden w-full py-3 rounded-md bg-[#e21d23] text-white text-sm font-medium text-center group-hover:bg-red-700 transition">
-  
-  {/* Shine Effect */}
-  <span className="absolute top-0 left-[-120%] h-full w-[35%] animate-shine bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></span>
+                        <span className="relative mt-4 flex items-center justify-center overflow-hidden w-full py-3 rounded-md bg-[#e21d23] text-white text-sm font-medium text-center group-hover:bg-red-700 transition">
+                          {/* Shine Effect */}
+                          <span className="absolute top-0 left-[-120%] h-full w-[35%] animate-shine bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></span>
 
-  <span className="relative z-10">
-    View Product
-  </span>
-</span>
+                          <span className="relative z-10">View Product</span>
+                        </span>
                       </div>
                     </article>
                   </Link>

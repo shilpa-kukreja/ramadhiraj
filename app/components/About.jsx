@@ -73,16 +73,16 @@ export default function About() {
           >
             Engineering Safety with
             <br />
-            Precision & Trust
+            Precision & Reliability
           </motion.h2>
 
           <motion.p
             variants={fadeUp}
             className="text-gray-600 mt-4 text-lg leading-relaxed"
           >
-            We deliver certified industrial solutions combining engineering
-            excellence, compliance-driven manufacturing, and advanced EHS
-            consulting services across India.
+            Delivering high-performance industrial emergency lighting solutions
+            designed to support safety, visibility, and dependable operation
+            across critical industrial environments.{" "}
           </motion.p>
         </motion.div>
 
@@ -98,7 +98,7 @@ export default function About() {
           >
             <div className="rounded-xl overflow-hidden shadow-2xl ring-1 ring-gray-100">
               <img
-                src="/about/about-us.png"
+                src="/about/1.jpg"
                 alt="Industrial Facility"
                 className="w-full h-[520px] object-cover hover:scale-105 transition-transform duration-700"
               />
@@ -115,7 +115,7 @@ export default function About() {
           >
             <motion.div variants={fadeRight}>
               <h3 className="text-2xl font-semibold text-gray-900">
-                BIS-Certified Manufacturing & ISO EHS Consulting
+                BIS-Certified Industrial Emergency Lighting Solutions{" "}
               </h3>
               <div className="w-16 h-0.5 bg-[#e21d23] mt-4" />
             </motion.div>
@@ -124,27 +124,30 @@ export default function About() {
               variants={fadeRight}
               className="text-gray-600 leading-relaxed text-justify"
             >
-              Ramadhiraj Power Systems Pvt. Ltd. specializes in industrial
-              emergency lighting systems designed to meet strict BIS
-              certification standards, ensuring maximum safety and reliability
-              in mission-critical environments.
+              Ramadhiraj Power Systems Pvt. Ltd. specializes in manufacturing
+              industrial emergency lighting systems engineered for performance,
+              durability, and operational reliability. Our solutions are
+              designed to support critical environments where safety and
+              uninterrupted visibility are essential.
             </motion.p>
 
             <motion.p
               variants={fadeRight}
               className="text-gray-600 leading-relaxed text-justify"
             >
-              Our EHS consulting division helps organizations achieve ISO 9001,
-              14001, and 45001 compliance through structured safety frameworks,
-              audits, and end-to-end operational support.
+              With a strong focus on quality manufacturing and industry
+              standards, we deliver dependable lighting systems trusted across
+              factories, warehouses, infrastructure projects, commercial
+              facilities, and industrial operations.
             </motion.p>
 
             <motion.p
               variants={fadeRight}
               className="text-gray-600 leading-relaxed text-justify"
             >
-              With a strong PAN India presence, we partner with industries to
-              build safer, compliant, and future-ready infrastructure systems.
+              Backed by technical expertise and a commitment to innovation, we
+              continue to provide reliable safety lighting solutions built for
+              modern industrial requirements.
             </motion.p>
 
             {/* CTA BUTTON */}

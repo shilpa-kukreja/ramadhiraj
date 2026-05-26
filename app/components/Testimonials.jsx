@@ -12,68 +12,74 @@ export default function Testimonials() {
 
   const testimonials = [
     {
-      id: 1,
-      name: "Rajesh Mehta",
-      position: "Facility Manager",
-      company: "Mumbai International Airport",
+      id: 1, 
+      name: "Amit Verma",
+      position: "Plant Manager",
+      company: "Noida",
       industry: "Airport",
       rating: 5,
-      content: "Ramadhiraj's emergency lighting systems have significantly improved our terminal safety. The BIS-certified products are reliable and their EHS consultancy helped us achieve full compliance.",
+      content:
+        "The emergency lighting systems delivered by Ramadhiraj have performed exceptionally well across our manufacturing facility. Reliable products and professional support throughout the project.",
       image: "R",
       date: "March 2024",
     },
     {
       id: 2,
-      name: "Priya Sharma",
-      position: "Safety Head",
-      company: "Delhi Metro Rail Corporation",
+      name: "Rohit Malhotra",
+      position: "Operations Head",
+      company: "Gurugram",
       industry: "Metro",
       rating: 5,
-      content: "Excellent quality products and professional service. The team provided end-to-end support for our tunnel lighting project. Highly recommended for industrial safety solutions.",
+      content:
+        "We were looking for dependable industrial lighting solutions for our warehouse operations, and Ramadhiraj delivered exactly what we needed with excellent quality and timely execution.",
       image: "P",
       date: "January 2024",
     },
     {
       id: 3,
-      name: "Dr. Anil Kumar",
-      position: "Hospital Administrator",
-      company: "Apollo Hospitals",
+      name: "Sanjay Kulkarni",
+      position: "Maintenance Manager",
+      company: "Pune",
       industry: "Healthcare",
       rating: 5,
-      content: "We installed their emergency lights across our facility. The 6-7 hour backup ensures uninterrupted critical care operations. Their EHS audit was very thorough.",
+      content:
+        "Their emergency lighting products are durable, efficient, and perfectly suited for industrial environments. The overall experience was smooth and highly professional.",
       image: "A",
       date: "December 2023",
     },
     {
       id: 4,
-      name: "Suresh Patil",
-      position: "Plant Head",
-      company: "Tata Motors",
+      name: "Neha Arora",
+      position: "Project Coordinator",
+      company: "Delhi",
       industry: "Automobile",
       rating: 4,
-      content: "Professional team with deep industry knowledge. Their industrial LED lights are energy efficient and durable. The safety training provided to our staff was excellent.",
+      content:
+        "Ramadhiraj provided reliable lighting solutions for our commercial infrastructure project. The product quality and response time were highly impressive.",
       image: "S",
       date: "November 2023",
     },
     {
       id: 5,
-      name: "Neha Gupta",
-      position: "EHS Director",
-      company: "ITC Limited",
+      name: "Vikas Sharma",
+      position: "Facility Manager",
+      company: "Ahmedabad",
       industry: "FMCG",
       rating: 5,
-      content: "Ramadhiraj's ISO-certified consultancy helped us achieve all safety compliances. Their documentation support and on-site training were exceptional.",
+      content:
+        "The team understood our operational requirements clearly and delivered lighting systems that matched our industrial safety expectations perfectly.",
       image: "N",
       date: "October 2023",
     },
     {
       id: 6,
-      name: "Vikram Singh",
-      position: "Project Manager",
+      name: "Anil Kapoor",
+      position: "Production Supervisor",
       company: "Reliance Industries",
-      industry: "Thermal Power",
+      industry: "Faridabad",
       rating: 5,
-      content: "Hazardous area lighting solutions are top-notch. The Ex d certified products are perfect for our chemical plant. Timely delivery and great after-sales support.",
+      content:
+        "Excellent product quality backed by strong technical support. Their emergency lighting systems have improved operational visibility and safety across our unit.",
       image: "V",
       date: "September 2023",
     },
@@ -84,7 +90,9 @@ export default function Testimonials() {
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setCurrentIndex(
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length,
+    );
   };
 
   const goToSlide = (index) => {
@@ -107,7 +115,7 @@ export default function Testimonials() {
         {[...Array(5)].map((_, i) => (
           <svg
             key={i}
-            className={`w-4 h-4 ${i < rating ? 'text-yellow-400' : 'text-gray-300'}`}
+            className={`w-4 h-4 ${i < rating ? "text-yellow-400" : "text-gray-300"}`}
             fill="currentColor"
             viewBox="0 0 20 20"
           >
@@ -121,16 +129,23 @@ export default function Testimonials() {
   return (
     <section className="py-12 bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Section Header */}
-        <div className={`text-center max-w-3xl mx-auto mb-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
-          <span className="text-sm font-semibold tracking-wider uppercase" style={{ color: '#e21d23' }}>
+        <div
+          className={`text-center max-w-3xl mx-auto mb-8 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+        >
+          <span
+            className="text-sm font-semibold tracking-wider uppercase"
+            style={{ color: "#e21d23" }}
+          >
             Client Testimonials
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">
-            What Our <span style={{ color: '#e21d23' }}>Clients Say</span>
+            What Our <span style={{ color: "#e21d23" }}>Clients Say</span>
           </h2>
-          <div className="w-20 h-1 mx-auto mb-6" style={{ backgroundColor: '#e21d23' }}></div>
+          <div
+            className="w-20 h-1 mx-auto mb-6"
+            style={{ backgroundColor: "#e21d23" }}
+          ></div>
           <p className="text-gray-600 text-lg">
             Trusted by industry leaders across India
           </p>
@@ -142,13 +157,20 @@ export default function Testimonials() {
             <div
               key={testimonial.id}
               className={`bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-500 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-10"
               }`}
               style={{ transitionDelay: `${idx * 100}ms` }}
             >
               {/* Quote Icon */}
               <div className="mb-4">
-                <svg className="w-10 h-10" style={{ color: '#e21d23', opacity: 0.3 }} fill="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="w-10 h-10"
+                  style={{ color: "#e21d23", opacity: 0.3 }}
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
               </div>
@@ -166,13 +188,22 @@ export default function Testimonials() {
 
               {/* Client Info */}
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg" style={{ backgroundColor: '#e21d23' }}>
+                <div
+                  className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg"
+                  style={{ backgroundColor: "#e21d23" }}
+                >
                   {testimonial.image}
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-800">{testimonial.name}</h4>
-                  <p className="text-sm text-gray-500">{testimonial.position}</p>
-                  <p className="text-xs" style={{ color: '#e21d23' }}>{testimonial.company}</p>
+                  <h4 className="font-bold text-gray-800">
+                    {testimonial.name}
+                  </h4>
+                  <p className="text-sm text-gray-500">
+                    {testimonial.position}
+                  </p>
+                  <p className="text-xs" style={{ color: "#e21d23" }}>
+                    {testimonial.company}
+                  </p>
                 </div>
               </div>
             </div>
@@ -184,7 +215,12 @@ export default function Testimonials() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             {/* Quote Icon */}
             <div className="mb-4">
-              <svg className="w-10 h-10" style={{ color: '#e21d23', opacity: 0.3 }} fill="currentColor" viewBox="0 0 24 24">
+              <svg
+                className="w-10 h-10"
+                style={{ color: "#e21d23", opacity: 0.3 }}
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
             </div>
@@ -198,13 +234,22 @@ export default function Testimonials() {
             <div className="w-full h-px bg-gray-100 my-4"></div>
 
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg" style={{ backgroundColor: '#e21d23' }}>
+              <div
+                className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg"
+                style={{ backgroundColor: "#e21d23" }}
+              >
                 {testimonials[currentIndex].image}
               </div>
               <div>
-                <h4 className="font-bold text-gray-800">{testimonials[currentIndex].name}</h4>
-                <p className="text-sm text-gray-500">{testimonials[currentIndex].position}</p>
-                <p className="text-xs" style={{ color: '#e21d23' }}>{testimonials[currentIndex].company}</p>
+                <h4 className="font-bold text-gray-800">
+                  {testimonials[currentIndex].name}
+                </h4>
+                <p className="text-sm text-gray-500">
+                  {testimonials[currentIndex].position}
+                </p>
+                <p className="text-xs" style={{ color: "#e21d23" }}>
+                  {testimonials[currentIndex].company}
+                </p>
               </div>
             </div>
           </div>
@@ -214,16 +259,36 @@ export default function Testimonials() {
             onClick={prevSlide}
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:shadow-lg transition-all"
           >
-            <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+            <svg
+              className="w-5 h-5 text-gray-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M15 19l-7-7 7-7"
+              />
             </svg>
           </button>
           <button
             onClick={nextSlide}
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:shadow-lg transition-all"
           >
-            <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+            <svg
+              className="w-5 h-5 text-gray-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 5l7 7-7 7"
+              />
             </svg>
           </button>
         </div>
@@ -235,11 +300,11 @@ export default function Testimonials() {
               key={index}
               onClick={() => goToSlide(index)}
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === currentIndex ? 'w-6' : ''
+                index === currentIndex ? "w-6" : ""
               }`}
               style={{
-                backgroundColor: index === currentIndex ? '#e21d23' : '#e5e7eb',
-                width: index === currentIndex ? '24px' : '8px',
+                backgroundColor: index === currentIndex ? "#e21d23" : "#e5e7eb",
+                width: index === currentIndex ? "24px" : "8px",
               }}
             ></button>
           ))}
@@ -251,21 +316,39 @@ export default function Testimonials() {
             onClick={prevSlide}
             className="w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:shadow-lg transition-all"
           >
-            <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+            <svg
+              className="w-5 h-5 text-gray-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M15 19l-7-7 7-7"
+              />
             </svg>
           </button>
           <button
             onClick={nextSlide}
             className="w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:shadow-lg transition-all"
           >
-            <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+            <svg
+              className="w-5 h-5 text-gray-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 5l7 7-7 7"
+              />
             </svg>
           </button>
         </div>
-
-      
       </div>
     </section>
   );

@@ -18,75 +18,10 @@ import Footer from "../../components/Footer";
 
 // BLOGS DATA
 const allBlogsData = {
-  "benefits-of-bis-certified-emergency-lights": {
+  
+  "why-emergency-exit-sign-boards-matter": {
     id: 1,
-    title:
-      "Top 5 Benefits of BIS-Certified Emergency Lights for Industries",
-
-    date: "Tue Mar 17 2026",
-    readTime: "5 min read",
-    category: "Industrial Safety",
-
-    content: `
-      <p>
-        In today’s industrial environments, emergency lighting is more than just a backup solution — it’s a critical safety requirement.
-      </p>
-
-      <br/>
-
-      <p>
-        BIS-certified emergency lights ensure reliability, durability, and compliance with Indian safety standards. These lighting systems automatically activate during power failures and help workers safely evacuate industrial premises.
-      </p>
-
-      <br/>
-
-      <h2>Major Benefits of BIS-Certified Emergency Lights</h2>
-
-      <ul>
-        <li>Enhanced workplace safety</li>
-        <li>Better operational continuity</li>
-        <li>Compliance with industrial regulations</li>
-        <li>Reduced accident risks</li>
-        <li>Energy-efficient performance</li>
-      </ul>
-
-      <br/>
-
-      <h2>Industries That Require Emergency Lighting</h2>
-
-      <p>
-        Industries such as manufacturing plants, warehouses, hospitals, and commercial facilities heavily rely on emergency lighting systems to maintain uninterrupted safety standards.
-      </p>
-
-      <br/>
-
-      <h2>Conclusion</h2>
-
-      <p>
-        Investing in BIS-certified emergency lights helps industries improve safety, ensure compliance, and maintain operational efficiency during emergencies.
-      </p>
-    `,
-
-    image: "/blog/image4.png",
-
-    author: {
-      name: "Rajesh Kumar",
-      role: "Industrial Safety Expert",
-      bio: "Rajesh specializes in industrial lighting and workplace safety solutions with extensive experience in BIS-certified safety systems.",
-    },
-
-    tags: [
-      "Emergency Lights",
-      "BIS Certification",
-      "Industrial Safety",
-      "LED Lights",
-    ],
-  },
-
-  "ehs-compliance-checklist-manufacturing": {
-    id: 2,
-    title:
-      "Essential EHS Compliance Checklist for Manufacturing Plants",
+    title: "Why Emergency Exit Sign Boards Matter in Industrial Safety",
 
     date: "Tue Mar 17 2026",
     readTime: "6 min read",
@@ -94,42 +29,23 @@ const allBlogsData = {
 
     content: `
       <p>
-        Environmental, Health, and Safety compliance is essential for every manufacturing facility.
+        In industrial and commercial environments, emergency exit sign boards play a major role in ensuring safe and organized evacuation during power failures, fire incidents, or emergency situations. Clear and properly illuminated exit signage helps workers, visitors, and staff quickly identify safe exit routes without confusion or delay.
       </p>
 
       <br/>
 
-      <p>
-        A strong EHS strategy helps organizations maintain safe working environments while ensuring regulatory compliance and sustainability.
+       <p>
+        Modern LED exit sign boards are designed for high visibility, long operational life, and reliable performance in demanding environments. These systems are commonly installed in factories, warehouses, hospitals, shopping malls, office buildings, and public infrastructure projects where safety and emergency preparedness are essential.
       </p>
 
-      <br/>
-
-      <h2>Key EHS Checklist Points</h2>
-
-      <ul>
-        <li>Safety audits</li>
-        <li>Employee training</li>
-        <li>Hazard identification</li>
-        <li>Fire safety compliance</li>
-        <li>Waste management systems</li>
-        <li>PPE monitoring</li>
-      </ul>
-
-      <br/>
-
-      <h2>Why EHS Compliance Matters</h2>
-
+      <br/> 
       <p>
-        A well-maintained compliance structure improves operational efficiency and protects both employees and business assets.
+        Industrial exit signage solutions not only improve workplace safety but also support better emergency response management. Whether it is a directional exit sign, glow-based emergency panel, or LED exit display system, each solution helps create a safer and more secure environment for people inside the facility.
       </p>
 
-      <br/>
-
-      <h2>Conclusion</h2>
-
+      <br/> 
       <p>
-        Manufacturing facilities that prioritize EHS compliance reduce risks, improve productivity, and maintain safer workplaces.
+        Reliable emergency sign boards are now an essential part of modern industrial infrastructure, helping organizations maintain safety standards while protecting lives during critical situations.
       </p>
     `,
 
@@ -141,13 +57,88 @@ const allBlogsData = {
       bio: "Priya works with manufacturing industries to implement effective EHS compliance systems and workplace safety standards.",
     },
 
-    tags: ["EHS", "Manufacturing", "Safety", "Compliance"],
+    tags: ["#EmergencyExitSign", "#IndustrialSafety ", "#LEDSignBoard", "#SafetyLighting","#IndustrialInfrastructure"],
   },
 
-  "choose-right-industrial-led-light": {
-    id: 3,
+  "essential-emergency-lighting-requirements": {
+    id: 2,
     title:
-      "How to Choose the Right Industrial LED Light for Your Facility",
+      "Essential Emergency Lighting Requirements for Industrial Facilities",
+
+    date: "Tue Mar 17 2026",
+    readTime: "5 min read",
+    category: "Industrial Safety",
+
+    content: `
+      <p>
+        Industrial facilities operate in environments where safety, visibility, and uninterrupted operations are critical. During power failures or emergency situations, emergency lighting systems play a major role in helping employees move safely, reducing operational risks, and supporting emergency response procedures. This is why installing the right emergency lighting system is essential for every industrial facility.
+      </p>
+
+      <br/>
+
+      <p>
+One of the most important requirements for industrial emergency lighting is reliable backup performance. Emergency lights should activate immediately during power interruptions to maintain visibility across exits, pathways, staircases, production zones, and operational areas. Delayed illumination can create confusion and increase safety risks during emergencies.      </p>
+
+      <br/>
+
+      <p>
+      Proper placement of emergency lighting systems is equally important. Industrial facilities should ensure that emergency lights are installed at strategic locations such as emergency exits, corridors, machinery areas, control rooms, storage sections, and evacuation routes. Correct positioning helps maintain visibility across critical movement zones.
+      </p>
+
+      <br/>
+
+      <p>
+Brightness and illumination quality are also essential factors. Industrial emergency lighting systems must provide adequate lighting output to support safe movement and operational awareness during emergencies. LED-based emergency lighting systems are widely preferred because they offer high brightness, energy efficiency, and dependable performance.
+      </p>
+      <br/>
+
+      <p>
+Durability is another key requirement for industrial applications. Manufacturing units, warehouses, power plants, and infrastructure environments often involve dust, heat, moisture, and vibration. Industrial emergency lighting systems should be designed with robust construction to ensure long-term performance under demanding conditions.
+      </p>
+
+      <br/>
+
+      <p>
+Battery backup duration should also be carefully evaluated. Reliable emergency lighting systems should continue operating for sufficient periods during emergencies to support evacuation and emergency management procedures effectively.
+      <p/>
+      
+      <br/>
+
+
+      <p>
+Regular maintenance and testing are equally important to ensure consistent performance. Industrial facilities should periodically inspect emergency lighting systems to verify battery health, illumination efficiency, and operational readiness.
+      </p>
+
+
+      <br/>
+
+      <p>
+At Ramadhiraj Power Systems, we provide industrial emergency lighting solutions engineered for safety, durability, and dependable performance across modern industrial environments.
+      </p>
+    
+    `,
+
+    image: "/blog/image4.png",
+
+    author: {
+      name: "Rajesh Kumar",
+      role: "Industrial Safety Expert",
+      bio: "Rajesh specializes in industrial lighting and workplace safety solutions with extensive experience in BIS-certified safety systems.",
+    },
+
+    tags: [
+      "#EmergencyLighting ",
+      "#IndustrialSafety",
+      "#LEDLightingSystems ",
+      "#IndustrialFacilities  ",
+      "#WorkplaceSafety",
+    ],
+  },
+
+
+  "how-to-select-the-right-industrial-led": {
+    id: 3,
+    title: "How to Select the Right Industrial LED Lighting Solution",
 
     date: "Tue Mar 17 2026",
     readTime: "4 min read",
@@ -155,36 +146,39 @@ const allBlogsData = {
 
     content: `
       <p>
-        Choosing the right industrial LED lighting solution can significantly improve energy savings and workplace productivity.
+        Choosing the right industrial LED lighting solution is important for maintaining workplace visibility, operational efficiency, and long-term reliability. Industrial environments require lighting systems capable of performing consistently under demanding operational conditions while supporting safety and productivity.
+
       </p>
 
       <br/>
 
-      <h2>Things to Consider Before Choosing Industrial Lights</h2>
+       <p>
+        The first step in selecting the right industrial LED lighting solution is understanding the application area. Different facilities such as manufacturing plants, warehouses, healthcare facilities, commercial infrastructure, and process industries require different lighting specifications. The lighting system should be selected according to the operational environment and visibility requirements.
+      </p>
 
-      <ul>
-        <li>Brightness requirements</li>
-        <li>Power consumption</li>
-        <li>IP ratings</li>
-        <li>Heat resistance</li>
-        <li>Maintenance costs</li>
-        <li>Lifespan and durability</li>
-      </ul>
+      <br/> <p>
+        Brightness and coverage are major factors to consider. Industrial LED lighting should provide uniform illumination across operational areas without creating dark spots or visibility issues. High-quality LED systems help improve workplace visibility while reducing energy consumption.
+      </p>
 
-      <br/>
+      <br/> <p>
+        Energy efficiency is another important advantage of LED lighting systems. Modern industrial LED lights consume less power compared to traditional lighting technologies while delivering better illumination performance. This helps organizations reduce operational costs and improve energy management.
+      </p>
 
-      <h2>Benefits of Modern LED Systems</h2>
+      <br/> <p>
+        Durability and operational life are equally important in industrial environments. Industrial facilities often operate continuously, making long-lasting lighting systems essential. LED lighting systems designed for industrial applications provide extended operational life with reduced maintenance requirements.
+      </p>
 
-      <p>
-        Modern LED systems provide long-term cost savings and improved lighting performance for industrial spaces.
+      <br/> <p>
+        Environmental conditions should also be considered before selecting lighting systems. Areas exposed to dust, heat, moisture, or vibration require robust industrial-grade lighting solutions capable of maintaining performance in challenging conditions.
+      </p>
+
+      <br/> <p>
+        Maintenance efficiency is another important consideration. Low-maintenance LED lighting systems help minimize downtime and operational disruptions while ensuring long-term reliability.
       </p>
 
       <br/>
-
-      <h2>Conclusion</h2>
-
       <p>
-        Selecting the right industrial lighting setup helps businesses improve visibility, reduce energy costs, and create safer work environments.
+        At Ramadhiraj Power Systems, we deliver industrial LED lighting solutions designed for performance, durability, energy efficiency, and reliable operation across demanding industrial applications.
       </p>
     `,
 
@@ -197,17 +191,17 @@ const allBlogsData = {
     },
 
     tags: [
-      "Industrial LED",
-      "Lighting",
-      "Energy Saving",
-      "Industrial Solutions",
+      "#IndustrialLEDLighting ",
+      "#LEDLightingSolutions ",
+      "#IndustrialLighting  ",
+      "#EnergyEfficientLighting ",
+      "#WorkplaceVisibility"
     ],
   },
 
-  "understanding-iso-45001-standards": {
+  "understanding-industrial-safety-lighting": {
     id: 4,
-    title:
-      "Understanding ISO 45001: Occupational Health & Safety Standards",
+    title: "Understanding Industrial Safety Lighting Compliance Standards",
 
     date: "Tue Mar 17 2026",
     readTime: "5 min read",
@@ -215,41 +209,50 @@ const allBlogsData = {
 
     content: `
       <p>
-        ISO 45001 is an internationally recognized standard focused on workplace health and safety.
+        Industrial safety lighting plays a critical role in maintaining workplace safety, visibility, and emergency preparedness across industrial facilities. To ensure dependable performance and operational safety, industries must follow specific lighting standards and compliance requirements designed for emergency and industrial environments.
+
+      </p>
+
+      <br/>
+      <p>
+        Safety lighting compliance standards are established to ensure that industrial facilities maintain adequate visibility during emergencies such as power failures, fire incidents, or evacuation situations. Properly designed emergency lighting systems help employees move safely through exits, pathways, staircases, and operational zones during critical situations.
+      
+      </p>
+
+      <br/>
+      <p>
+        One of the key aspects of industrial safety lighting compliance is illumination performance. Emergency lighting systems should provide sufficient brightness to maintain visibility throughout evacuation routes and operational areas. Poor illumination during emergencies can increase safety risks and disrupt emergency response procedures.
+      
+      </p>
+
+      <br/>
+      <p>
+        Backup reliability is another important compliance requirement. Emergency lighting systems should activate immediately during power interruptions and continue functioning for the required duration to support safe evacuation and emergency operations.
+      
+      </p>
+
+      <br/>
+      <p>
+        Installation positioning also plays an important role in compliance standards. Emergency lights should be installed at clearly visible locations including exits, corridors, staircases, control rooms, production sections, and critical operational areas.
+      
+      </p>
+
+      <br/>
+      <p>
+        
+      Industrial safety lighting systems must also be durable and suitable for the operating environment. Facilities exposed to heat, dust, vibration, or hazardous conditions require industrial-grade lighting systems designed for long-term reliability and performance.
+      </p>
+
+      <br/>
+      <p>
+        Routine testing and maintenance are equally important for compliance. Industrial facilities should regularly inspect and test emergency lighting systems to ensure operational readiness and consistent performance during emergency situations.
+      
       </p>
 
       <br/>
 
       <p>
-        The framework helps organizations reduce workplace risks, improve employee safety, and build a proactive safety culture.
-      </p>
-
-      <br/>
-
-      <h2>Major Advantages of ISO 45001</h2>
-
-      <ul>
-        <li>Reduced workplace incidents</li>
-        <li>Improved legal compliance</li>
-        <li>Better employee trust</li>
-        <li>Stronger risk management</li>
-        <li>Continuous safety improvement</li>
-      </ul>
-
-      <br/>
-
-      <h2>Why Businesses Implement ISO 45001</h2>
-
-      <p>
-        Implementing ISO 45001 demonstrates a company’s commitment to maintaining safe and healthy work environments.
-      </p>
-
-      <br/>
-
-      <h2>Conclusion</h2>
-
-      <p>
-        Organizations adopting ISO 45001 standards strengthen workplace safety culture and improve operational reliability.
+At Ramadhiraj Power Systems, we provide dependable industrial safety lighting solutions engineered to support operational safety, reliable visibility, and modern industrial requirements.
       </p>
     `,
 
@@ -261,12 +264,7 @@ const allBlogsData = {
       bio: "Dr. Anil Mehta is an occupational health and safety expert with years of experience implementing ISO safety systems across industries.",
     },
 
-    tags: [
-      "ISO 45001",
-      "Occupational Safety",
-      "Health & Safety",
-      "Compliance",
-    ],
+    tags: ["#IndustrialSafetyLighting", "#EmergencyLightingStandards", "#IndustrialCompliance ", "#SafetyLightingSystems","#IndustrialInfrastructure"],
   },
 };
 
@@ -287,8 +285,7 @@ const BlogDetailPage = () => {
     setLoading(false);
   }, [slug]);
 
-  const shareUrl =
-    typeof window !== "undefined" ? window.location.href : "";
+  const shareUrl = typeof window !== "undefined" ? window.location.href : "";
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(shareUrl);
@@ -305,8 +302,7 @@ const BlogDetailPage = () => {
 
     return Object.entries(allBlogsData)
       .filter(
-        ([key, value]) =>
-          key !== slug && value.category === blog.category
+        ([key, value]) => key !== slug && value.category === blog.category,
       )
       .slice(0, 3)
       .map(([key, value]) => ({
@@ -323,9 +319,7 @@ const BlogDetailPage = () => {
 
     for (const match of matches) {
       headings.push({
-        id: match[1]
-          .toLowerCase()
-          .replace(/[^a-z0-9]+/g, "-"),
+        id: match[1].toLowerCase().replace(/[^a-z0-9]+/g, "-"),
         title: match[1],
       });
     }
@@ -354,9 +348,7 @@ const BlogDetailPage = () => {
 
         <div className="min-h-screen flex items-center justify-center px-4">
           <div className="text-center">
-            <h2 className="text-3xl font-bold mb-4">
-              Blog Not Found
-            </h2>
+            <h2 className="text-3xl font-bold mb-4">Blog Not Found</h2>
 
             <Link
               href="/blog"
@@ -421,9 +413,7 @@ const BlogDetailPage = () => {
               <div className="sticky top-24 space-y-6">
                 {/* TOC */}
                 <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
-                  <h3 className="font-bold text-lg mb-5">
-                    Table of Contents
-                  </h3>
+                  <h3 className="font-bold text-lg mb-5">Table of Contents</h3>
 
                   <ul className="space-y-3">
                     {tableOfContents.map((item, index) => (
@@ -441,9 +431,7 @@ const BlogDetailPage = () => {
 
                 {/* SHARE */}
                 <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
-                  <h3 className="font-bold text-lg mb-5">
-                    Share Article
-                  </h3>
+                  <h3 className="font-bold text-lg mb-5">Share Article</h3>
 
                   <button
                     onClick={handleCopyLink}
@@ -478,7 +466,7 @@ const BlogDetailPage = () => {
 
               {/* CONTENT */}
               <div
-                className="prose prose-lg max-w-none prose-headings:text-[#dc2626] prose-p:text-gray-700 prose-li:text-gray-700 prose-headings:font-bold"
+                className="prose prose-lg max-w-none prose-headings:text-[#dc2626] prose-p:text-gray-700 prose-li:text-gray-700 prose-headings:font-bold text-justify"
                 dangerouslySetInnerHTML={{
                   __html: blog.content,
                 }}
@@ -508,9 +496,7 @@ const BlogDetailPage = () => {
                   </div>
 
                   <div className="text-center">
-                    <h3 className="text-xl font-bold">
-                      {blog.author.name}
-                    </h3>
+                    <h3 className="text-xl font-bold">{blog.author.name}</h3>
 
                     <p className="text-[#dc2626] font-medium mt-1">
                       {blog.author.role}

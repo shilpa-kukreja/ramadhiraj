@@ -117,7 +117,7 @@ export default function ContactPage() {
               className="w-full h-40 sm:h-90 object-cover"
             /> */}
             <img
-              src="/industries/banner.png"
+              src="/contact/banner.jpg"
               className="w-full h-40 sm:h-90 object-cover"
             />
           </div>

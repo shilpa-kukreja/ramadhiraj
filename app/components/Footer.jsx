@@ -30,14 +30,7 @@ export default function Footer() {
     name: "Industrial Emergency Light",
     href: "/all-products?category=industrial",
   },
-  {
-    name: "Industrial Emergency Light RPS-EL 40W ",
-    href: "/all-products?category=emergency",
-  },
-  {
-    name: "Industrial Emergency Light SignBoard",
-    href: "/all-products?category=light",
-  },
+ 
   {
     name: "Flame Proof Industrial Emergency Light",
     href: "/all-products?category=flame",
@@ -74,9 +67,8 @@ export default function Footer() {
                 className="w-36 mb-5"
               />
 
-              <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                Ramadhiraj Power Systems delivers advanced industrial lighting,
-                safety systems, and EHS consultancy solutions for modern infrastructure.
+              <p className="text-gray-400 text-sm leading-relaxed mb-6 text-justify">
+                Ramadhiraj Power Systems delivers reliable industrial emergency lighting solutions engineered for safety, visibility, and dependable performance across critical environments.
               </p>
 
               {/* Social */}

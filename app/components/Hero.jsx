@@ -10,10 +10,7 @@ export default function Hero() {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [
-    "/hero/1.jpeg",
-    "/hero/2.jpeg",
-  ];
+  const slides = ["/hero/1.jpg", "/hero/2.jpg"];
 
   useEffect(() => {
     setIsVisible(true);
@@ -22,9 +19,7 @@ export default function Hero() {
   // AUTO SLIDE EVERY 3 SECONDS
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) =>
-        prev === slides.length - 1 ? 0 : prev + 1
-      );
+      setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
     }, 3000);
 
     return () => clearInterval(interval);
@@ -38,9 +33,7 @@ export default function Hero() {
           <div
             key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ${
-              currentSlide === index
-                ? "opacity-100"
-                : "opacity-0"
+              currentSlide === index ? "opacity-100" : "opacity-0"
             }`}
           >
             <img
@@ -71,35 +64,34 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
         <div className="max-w-3xl mx-auto text-center">
           {/* Main Heading */}
-          <h1
+          {/* <h1
             className={`text-4xl md:text-4xl lg:text-5xl font-bold text-white mb-4 transition-all duration-700 delay-100 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-5"
             }`}
           >
-            Industrial LED Lights
+            Reliable Emergency Lighting
             <br />
 
             <span className="text-[#e21d23] text-4xl">
-              & EHS Consultancy
+              for Critical Environments
             </span>
-          </h1>
+          </h1> */}
 
           {/* Subheading */}
-          <p
+          {/* <p
             className={`text-gray-300 text-lg md:text-lg mb-8 max-w-2xl mx-auto transition-all duration-700 delay-200 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-5"
             }`}
           >
-            BIS-certified emergency lighting solutions & ISO-certified
-            safety consulting across India.
-          </p>
+           Delivering high-performance emergency lighting systems and industrial safety solutions designed to support visibility, safety, and operational continuity across demanding workplaces.
+          </p> */}
 
           {/* CTA Buttons */}
-          <div
+          {/* <div
             className={`flex flex-wrap justify-center gap-4 mb-12 transition-all duration-700 delay-300 ${
               isVisible
                 ? "opacity-100 translate-y-0"
@@ -107,18 +99,15 @@ export default function Hero() {
             }`}
           >
             <Link
-  href="/contact-us"
-  className="group relative overflow-hidden bg-[#e21d23] hover:bg-[#c81a1f]
+              href="/contact-us"
+              className="group relative overflow-hidden bg-[#e21d23] hover:bg-[#c81a1f]
   text-white font-semibold px-6 py-3
   rounded-lg transition duration-300 inline-flex items-center justify-center"
->
-  {/* Shine Effect */}
-  <span className="absolute top-0 left-[-120%] h-full w-[40%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
+            >
+              <span className="absolute top-0 left-[-120%] h-full w-[40%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
 
-  <span className="relative z-10">
-    Request a Quote
-  </span>
-</Link>
+              <span className="relative z-10">Request Consultation</span>
+            </Link>
 
             <Link
               href="/all-products"
@@ -127,12 +116,11 @@ export default function Hero() {
               text-white font-semibold px-6 py-3
               rounded-lg transition"
             >
-              Explore Products
+              Explore Product
             </Link>
-          </div>
+          </div> */}
 
-          {/* SLIDER DOTS */}
-          <div className="flex justify-center gap-3">
+          {/* <div className="flex justify-center gap-3">
             {slides.map((_, index) => (
               <button
                 key={index}
@@ -144,7 +132,7 @@ export default function Hero() {
                 }`}
               />
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

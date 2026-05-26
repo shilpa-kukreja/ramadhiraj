@@ -16,35 +16,35 @@ export default function Blog() {
   const blogs = [
     {
       id: 1,
-      title: "Top 5 Benefits of BIS-Certified Emergency Lights for Industries",
+      title: "Top Benefits of Industrial Emergency Lighting Systems",
       excerpt:
-        "Explore how BIS-certified emergency lighting enhances workplace safety, improves operational reliability, and ensures full compliance for industrial facilities.",
-      category: "LED Lighting",
+        "Discover how industrial emergency lighting improves workplace visibility, supports operational safety, reduces downtime risks, and enhances emergency preparedness across critical environments.",
+      category: "Emergency Lighting",
       readTime: "5 min read",
       date: "May 15, 2024",
       image: "/blog/image4.png",
       author: "Rajesh Kumar",
-      authorRole: "Senior Engineer",
-      slug: "benefits-of-bis-certified-emergency-lights",
+      authorRole: "Senior Technical Specialist",
+      slug: "why-emergency-exit-sign-boards-matter",
       featured: true,
     },
     {
       id: 2,
-      title: "Essential EHS Compliance Checklist for Manufacturing Plants",
+      title: "Essential Emergency Lighting Requirements for Industrial Facilities",
       excerpt:
         "A complete guide to maintaining environmental, health, and safety compliance standards across manufacturing operations.",
-      category: "EHS Consultancy",
+      category: "Industrial Safety",
       readTime: "7 min read",
       date: "May 10, 2024",
       image: "/blog/image3.png",
       author: "Priya Sharma",
       authorRole: "EHS Consultant",
-      slug: "ehs-compliance-checklist-manufacturing",
+      slug: "essential-emergency-lighting-requirements",
       featured: false,
     },
     {
       id: 3,
-      title: "How to Choose the Right Industrial LED Light for Your Facility",
+      title: "How to Select the Right Industrial LED Lighting Solution",
       excerpt:
         "Learn the key performance, durability, and energy-efficiency factors to consider before selecting industrial LED solutions.",
       category: "LED Lighting",
@@ -53,21 +53,21 @@ export default function Blog() {
       image: "/blog/image2.png",
       author: "Amit Verma",
       authorRole: "Product Manager",
-      slug: "choose-right-industrial-led-light",
+      slug: "how-to-select-the-right-industrial-led",
       featured: false,
     },
     {
       id: 4,
-      title: "Understanding ISO 45001: Occupational Health & Safety Standards",
+      title: "Understanding Industrial Safety Lighting Compliance Standards",
       excerpt:
         "Understand how ISO 45001 helps organizations strengthen workplace safety systems and reduce operational risks.",
-      category: "EHS Consultancy",
+      category: "Safety Standards",
       readTime: "6 min read",
       date: "April 28, 2024",
       image: "/blog/image1.png",
       author: "Dr. Anil Mehta",
       authorRole: "Safety Expert",
-      slug: "understanding-iso-45001-standards",
+      slug: "understanding-industrial-safety-lighting",
       featured: false,
     },
   ];
@@ -104,8 +104,7 @@ export default function Blog() {
           </h2>
 
           <p className="mt-3 text-gray-600 text-base leading-relaxed">
-            Explore expert articles on industrial lighting, workplace safety,
-            and compliance solutions.
+            Explore expert resources on industrial emergency lighting, safety systems, compliance standards, and modern infrastructure lighting solutions.
           </p>
         </div>
 
@@ -159,31 +158,30 @@ export default function Blog() {
                     </p>
                   </div>
 
-                <Link
-  href={`/blog/${featuredBlog.slug}`}
-  className="group relative overflow-hidden flex items-center gap-2 bg-[#e21d23] hover:bg-black text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300"
->
-  {/* Shine Effect */}
-  <span className="absolute top-0 left-[-120%] h-full w-[40%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
+                  <Link
+                    href={`/blog/${featuredBlog.slug}`}
+                    className="group relative overflow-hidden flex items-center gap-2 bg-[#e21d23] hover:bg-black text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300"
+                  >
+                    {/* Shine Effect */}
+                    <span className="absolute top-0 left-[-120%] h-full w-[40%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
 
-  <span className="relative z-10 flex items-center gap-2">
-    Read More
-
-    <svg
-      className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M9 5l7 7-7 7"
-      />
-    </svg>
-  </span>
-</Link>
+                    <span className="relative z-10 flex items-center gap-2">
+                      Read More
+                      <svg
+                        className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </span>
+                  </Link>
                 </div>
               </div>
             </div>

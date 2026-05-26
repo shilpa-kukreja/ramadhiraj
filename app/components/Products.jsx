@@ -7,12 +7,14 @@ import Link from "next/link";
 import Navbar from "./Navbar";
 import {
   categories,
-  productsByCategory,
+  defaultCategoryId,
+  getProductsForCategory,
   getProductImageSrc,
 } from "@/lib/products";
 
 export default function Products() {
-  const [activeCategory, setActiveCategory] = useState("emergency");
+  const [activeCategory, setActiveCategory] = useState(defaultCategoryId);
+  const activeProducts = getProductsForCategory(activeCategory);
 
   return (
     <>
@@ -28,17 +30,18 @@ export default function Products() {
             className="text-center max-w-4xl mx-auto mb-6"
           >
             <span className="text-xs tracking-[0.4em] uppercase font-semibold text-[#e21d23]">
-              Our Product Portfolio
+              OUR PRODUCT PORTFOLIO
             </span>
 
             <h2 className="text-4xl md:text-4xl lg:text-4xl font-semibold text-gray-900 mt-5 leading-tight">
-              Industrial Lighting
-              <span className="text-[#e21d23]"> Solutions</span>
+              Industrial Emergency
+              <span className="text-[#e21d23]"> Lighting Solutions</span>
             </h2>
 
             <p className="text-gray-600 text-lg leading-relaxed mt-4 max-w-3xl mx-auto text-center">
-              Premium BIS-certified lighting systems engineered for industrial
-              safety and reliability.
+              Reliable industrial lighting systems engineered for safety,
+              durability, and dependable performance across critical operational
+              environments.{" "}
             </p>
           </motion.div>
 
@@ -68,7 +71,7 @@ export default function Products() {
               transition={{ duration: 0.5 }}
             >
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                {productsByCategory[activeCategory].map((product, index) => (
+                {activeProducts.map((product, index) => (
                   <Link
                     key={product.id}
                     href={`/products/${product.slug}`}
@@ -101,21 +104,18 @@ export default function Products() {
                           </h3>
                         </div>
 
-                        <p className="text-sm text-gray-500 leading-relaxed mb-7 min-h-[30px]">
+                        {/* <p className="text-sm text-gray-500 leading-relaxed mb-7 min-h-[30px]">
                           {product.specs}
-                        </p>
+                        </p> */}
 
-                          <div className="relative overflow-hidden rounded-md">
-  
-  {/* Shine Effect */}
-  <span className="absolute top-0 left-[-120%] h-full w-[50%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 z-10" />
+                        <div className="relative overflow-hidden rounded-md">
+                          {/* Shine Effect */}
+                          <span className="absolute top-0 left-[-120%] h-full w-[50%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 z-10" />
 
-  <span className="relative block w-full py-3.5 rounded-md bg-[#e21d23] text-white font-medium text-center group-hover:bg-red-700 transition">
-    View Product
-  </span>
-
-</div>
-                        
+                          <span className="relative block w-full py-3.5 rounded-md bg-[#e21d23] text-white font-medium text-center group-hover:bg-red-700 transition">
+                            View Product
+                          </span>
+                        </div>
                       </div>
                     </motion.div>
                   </Link>

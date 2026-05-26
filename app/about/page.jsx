@@ -310,7 +310,7 @@ export default function About() {
         <div className="py-3 text-sm text-center">
           <div className=" mx-auto ">
             <img
-              src="/about/aboutbanner.jpg"
+              src="/about/aboutusbanner.jpg"
               alt="Info"
               className="inline-block w-full h-[400px] mr-2"
             />
@@ -514,7 +514,7 @@ export default function About() {
                 className="relative h-[580px] w-full overflow-hidden rounded-[24px]"
               >
                 <img
-                  src="/about/about.png"
+                  src="/about/2.jpg"
                   alt="CEO Sanjeev Arora"
                   className="object-cover object-top h-full w-full hover:scale-105 transition-transform duration-700"
                 />
