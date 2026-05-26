@@ -124,13 +124,13 @@ export default function ProductsContent() {
                           </h3>
                         </div>
 
-                        <p className="text-sm text-gray-500 leading-relaxed mb-2 min-h-[30px]">
+                        {/* <p className="text-sm text-gray-500 leading-relaxed mb-2 min-h-[30px]">
                           {product.specs}
                         </p>
 
                         <p className="text-[#e21d23] font-semibold mb-5">
                           {product.price}
-                        </p>
+                        </p> */}
 
                        <div className="relative overflow-hidden rounded-md">
   
