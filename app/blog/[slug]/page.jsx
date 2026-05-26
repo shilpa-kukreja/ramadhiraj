@@ -28,23 +28,23 @@ const allBlogsData = {
     category: "EHS Compliance",
 
     content: `
-      <p>
+      <p id="role-in-industrial-safety">
         In industrial and commercial environments, emergency exit sign boards play a major role in ensuring safe and organized evacuation during power failures, fire incidents, or emergency situations. Clear and properly illuminated exit signage helps workers, visitors, and staff quickly identify safe exit routes without confusion or delay.
       </p>
 
       <br/>
 
-       <p>
+       <p id="modern-led-exit-signs">
         Modern LED exit sign boards are designed for high visibility, long operational life, and reliable performance in demanding environments. These systems are commonly installed in factories, warehouses, hospitals, shopping malls, office buildings, and public infrastructure projects where safety and emergency preparedness are essential.
       </p>
 
       <br/> 
-      <p>
+      <p id="industrial-exit-signage">
         Industrial exit signage solutions not only improve workplace safety but also support better emergency response management. Whether it is a directional exit sign, glow-based emergency panel, or LED exit display system, each solution helps create a safer and more secure environment for people inside the facility.
       </p>
 
       <br/> 
-      <p>
+      <p id="reliable-emergency-sign-boards">
         Reliable emergency sign boards are now an essential part of modern industrial infrastructure, helping organizations maintain safety standards while protecting lives during critical situations.
       </p>
     `,
@@ -58,6 +58,13 @@ const allBlogsData = {
     },
 
     tags: ["#EmergencyExitSign", "#IndustrialSafety ", "#LEDSignBoard", "#SafetyLighting","#IndustrialInfrastructure"],
+
+    toc: [
+      { id: "role-in-industrial-safety", title: "Role in Industrial Safety & Evacuation" },
+      { id: "modern-led-exit-signs", title: "Modern LED Exit Sign Boards" },
+      { id: "industrial-exit-signage", title: "Industrial Exit Signage Solutions" },
+      { id: "reliable-emergency-sign-boards", title: "Reliable Emergency Sign Boards" },
+    ],
   },
 
   "essential-emergency-lighting-requirements": {
@@ -70,49 +77,49 @@ const allBlogsData = {
     category: "Industrial Safety",
 
     content: `
-      <p>
+      <p id="why-emergency-lighting-matters">
         Industrial facilities operate in environments where safety, visibility, and uninterrupted operations are critical. During power failures or emergency situations, emergency lighting systems play a major role in helping employees move safely, reducing operational risks, and supporting emergency response procedures. This is why installing the right emergency lighting system is essential for every industrial facility.
       </p>
 
       <br/>
 
-      <p>
+      <p id="reliable-backup-performance">
 One of the most important requirements for industrial emergency lighting is reliable backup performance. Emergency lights should activate immediately during power interruptions to maintain visibility across exits, pathways, staircases, production zones, and operational areas. Delayed illumination can create confusion and increase safety risks during emergencies.      </p>
 
       <br/>
 
-      <p>
+      <p id="proper-placement">
       Proper placement of emergency lighting systems is equally important. Industrial facilities should ensure that emergency lights are installed at strategic locations such as emergency exits, corridors, machinery areas, control rooms, storage sections, and evacuation routes. Correct positioning helps maintain visibility across critical movement zones.
       </p>
 
       <br/>
 
-      <p>
+      <p id="brightness-and-illumination">
 Brightness and illumination quality are also essential factors. Industrial emergency lighting systems must provide adequate lighting output to support safe movement and operational awareness during emergencies. LED-based emergency lighting systems are widely preferred because they offer high brightness, energy efficiency, and dependable performance.
       </p>
       <br/>
 
-      <p>
+      <p id="durability-requirements">
 Durability is another key requirement for industrial applications. Manufacturing units, warehouses, power plants, and infrastructure environments often involve dust, heat, moisture, and vibration. Industrial emergency lighting systems should be designed with robust construction to ensure long-term performance under demanding conditions.
       </p>
 
       <br/>
 
-      <p>
+      <p id="battery-backup-duration">
 Battery backup duration should also be carefully evaluated. Reliable emergency lighting systems should continue operating for sufficient periods during emergencies to support evacuation and emergency management procedures effectively.
       <p/>
       
       <br/>
 
 
-      <p>
+      <p id="maintenance-and-testing">
 Regular maintenance and testing are equally important to ensure consistent performance. Industrial facilities should periodically inspect emergency lighting systems to verify battery health, illumination efficiency, and operational readiness.
       </p>
 
 
       <br/>
 
-      <p>
+      <p id="ramadhiraj-solutions">
 At Ramadhiraj Power Systems, we provide industrial emergency lighting solutions engineered for safety, durability, and dependable performance across modern industrial environments.
       </p>
     
@@ -133,6 +140,17 @@ At Ramadhiraj Power Systems, we provide industrial emergency lighting solutions 
       "#IndustrialFacilities  ",
       "#WorkplaceSafety",
     ],
+
+    toc: [
+      { id: "why-emergency-lighting-matters", title: "Why Emergency Lighting Matters" },
+      { id: "reliable-backup-performance", title: "Reliable Backup Performance" },
+      { id: "proper-placement", title: "Proper Placement of Systems" },
+      { id: "brightness-and-illumination", title: "Brightness & Illumination Quality" },
+      { id: "durability-requirements", title: "Durability for Industrial Use" },
+      { id: "battery-backup-duration", title: "Battery Backup Duration" },
+      { id: "maintenance-and-testing", title: "Maintenance & Testing" },
+      { id: "ramadhiraj-solutions", title: "Ramadhiraj Power Systems Solutions" },
+    ],
   },
 
 
@@ -145,39 +163,39 @@ At Ramadhiraj Power Systems, we provide industrial emergency lighting solutions 
     category: "Industrial Lighting",
 
     content: `
-      <p>
+      <p id="choosing-industrial-led">
         Choosing the right industrial LED lighting solution is important for maintaining workplace visibility, operational efficiency, and long-term reliability. Industrial environments require lighting systems capable of performing consistently under demanding operational conditions while supporting safety and productivity.
 
       </p>
 
       <br/>
 
-       <p>
+       <p id="application-area">
         The first step in selecting the right industrial LED lighting solution is understanding the application area. Different facilities such as manufacturing plants, warehouses, healthcare facilities, commercial infrastructure, and process industries require different lighting specifications. The lighting system should be selected according to the operational environment and visibility requirements.
       </p>
 
-      <br/> <p>
+      <br/> <p id="brightness-and-coverage">
         Brightness and coverage are major factors to consider. Industrial LED lighting should provide uniform illumination across operational areas without creating dark spots or visibility issues. High-quality LED systems help improve workplace visibility while reducing energy consumption.
       </p>
 
-      <br/> <p>
+      <br/> <p id="energy-efficiency">
         Energy efficiency is another important advantage of LED lighting systems. Modern industrial LED lights consume less power compared to traditional lighting technologies while delivering better illumination performance. This helps organizations reduce operational costs and improve energy management.
       </p>
 
-      <br/> <p>
+      <br/> <p id="durability-and-life">
         Durability and operational life are equally important in industrial environments. Industrial facilities often operate continuously, making long-lasting lighting systems essential. LED lighting systems designed for industrial applications provide extended operational life with reduced maintenance requirements.
       </p>
 
-      <br/> <p>
+      <br/> <p id="environmental-conditions">
         Environmental conditions should also be considered before selecting lighting systems. Areas exposed to dust, heat, moisture, or vibration require robust industrial-grade lighting solutions capable of maintaining performance in challenging conditions.
       </p>
 
-      <br/> <p>
+      <br/> <p id="maintenance-efficiency">
         Maintenance efficiency is another important consideration. Low-maintenance LED lighting systems help minimize downtime and operational disruptions while ensuring long-term reliability.
       </p>
 
       <br/>
-      <p>
+      <p id="ramadhiraj-led-solutions">
         At Ramadhiraj Power Systems, we deliver industrial LED lighting solutions designed for performance, durability, energy efficiency, and reliable operation across demanding industrial applications.
       </p>
     `,
@@ -197,6 +215,17 @@ At Ramadhiraj Power Systems, we provide industrial emergency lighting solutions 
       "#EnergyEfficientLighting ",
       "#WorkplaceVisibility"
     ],
+
+    toc: [
+      { id: "choosing-industrial-led", title: "Choosing Industrial LED Lighting" },
+      { id: "application-area", title: "Understanding the Application Area" },
+      { id: "brightness-and-coverage", title: "Brightness & Coverage" },
+      { id: "energy-efficiency", title: "Energy Efficiency Benefits" },
+      { id: "durability-and-life", title: "Durability & Operational Life" },
+      { id: "environmental-conditions", title: "Environmental Conditions" },
+      { id: "maintenance-efficiency", title: "Maintenance Efficiency" },
+      { id: "ramadhiraj-led-solutions", title: "Ramadhiraj LED Solutions" },
+    ],
   },
 
   "understanding-industrial-safety-lighting": {
@@ -208,50 +237,50 @@ At Ramadhiraj Power Systems, we provide industrial emergency lighting solutions 
     category: "ISO Standards",
 
     content: `
-      <p>
+      <p id="role-of-safety-lighting">
         Industrial safety lighting plays a critical role in maintaining workplace safety, visibility, and emergency preparedness across industrial facilities. To ensure dependable performance and operational safety, industries must follow specific lighting standards and compliance requirements designed for emergency and industrial environments.
 
       </p>
 
       <br/>
-      <p>
+      <p id="compliance-standards">
         Safety lighting compliance standards are established to ensure that industrial facilities maintain adequate visibility during emergencies such as power failures, fire incidents, or evacuation situations. Properly designed emergency lighting systems help employees move safely through exits, pathways, staircases, and operational zones during critical situations.
       
       </p>
 
       <br/>
-      <p>
+      <p id="illumination-performance">
         One of the key aspects of industrial safety lighting compliance is illumination performance. Emergency lighting systems should provide sufficient brightness to maintain visibility throughout evacuation routes and operational areas. Poor illumination during emergencies can increase safety risks and disrupt emergency response procedures.
       
       </p>
 
       <br/>
-      <p>
+      <p id="backup-reliability">
         Backup reliability is another important compliance requirement. Emergency lighting systems should activate immediately during power interruptions and continue functioning for the required duration to support safe evacuation and emergency operations.
       
       </p>
 
       <br/>
-      <p>
+      <p id="installation-positioning">
         Installation positioning also plays an important role in compliance standards. Emergency lights should be installed at clearly visible locations including exits, corridors, staircases, control rooms, production sections, and critical operational areas.
       
       </p>
 
       <br/>
-      <p>
+      <p id="durability-in-environment">
         
       Industrial safety lighting systems must also be durable and suitable for the operating environment. Facilities exposed to heat, dust, vibration, or hazardous conditions require industrial-grade lighting systems designed for long-term reliability and performance.
       </p>
 
       <br/>
-      <p>
+      <p id="testing-and-maintenance">
         Routine testing and maintenance are equally important for compliance. Industrial facilities should regularly inspect and test emergency lighting systems to ensure operational readiness and consistent performance during emergency situations.
       
       </p>
 
       <br/>
 
-      <p>
+      <p id="ramadhiraj-safety-lighting">
 At Ramadhiraj Power Systems, we provide dependable industrial safety lighting solutions engineered to support operational safety, reliable visibility, and modern industrial requirements.
       </p>
     `,
@@ -265,6 +294,17 @@ At Ramadhiraj Power Systems, we provide dependable industrial safety lighting so
     },
 
     tags: ["#IndustrialSafetyLighting", "#EmergencyLightingStandards", "#IndustrialCompliance ", "#SafetyLightingSystems","#IndustrialInfrastructure"],
+
+    toc: [
+      { id: "role-of-safety-lighting", title: "Role of Industrial Safety Lighting" },
+      { id: "compliance-standards", title: "Safety Lighting Compliance Standards" },
+      { id: "illumination-performance", title: "Illumination Performance" },
+      { id: "backup-reliability", title: "Backup Reliability Requirements" },
+      { id: "installation-positioning", title: "Installation Positioning" },
+      { id: "durability-in-environment", title: "Durability in Operating Environments" },
+      { id: "testing-and-maintenance", title: "Testing & Maintenance" },
+      { id: "ramadhiraj-safety-lighting", title: "Ramadhiraj Safety Lighting Solutions" },
+    ],
   },
 };
 
@@ -313,6 +353,8 @@ const BlogDetailPage = () => {
 
   const getTableOfContents = () => {
     if (!blog) return [];
+
+    if (blog.toc?.length) return blog.toc;
 
     const headings = [];
     const matches = blog.content.matchAll(/<h2>(.*?)<\/h2>/g);
@@ -416,21 +458,25 @@ const BlogDetailPage = () => {
                   <h3 className="font-bold text-lg mb-5">Table of Contents</h3>
 
                   <ul className="space-y-3">
-                    {tableOfContents.map((item, index) => (
-                      <li key={index}>
-                        <a
-                          href={`#${item.id}`}
-                          className="text-gray-600 hover:text-[#dc2626] transition"
-                        >
-                          {item.title}
-                        </a>
-                      </li>
-                    ))}
+                    {tableOfContents.length > 0 ? (
+                      tableOfContents.map((item) => (
+                        <li key={item.id}>
+                          <a
+                            href={`#${item.id}`}
+                            className="text-sm text-gray-600 hover:text-[#dc2626] transition leading-snug"
+                          >
+                            {item.title}
+                          </a>
+                        </li>
+                      ))
+                    ) : (
+                      <li className="text-sm text-gray-400">No sections available</li>
+                    )}
                   </ul>
                 </div>
 
                 {/* SHARE */}
-                <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+                {/* <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
                   <h3 className="font-bold text-lg mb-5">Share Article</h3>
 
                   <button
@@ -449,7 +495,7 @@ const BlogDetailPage = () => {
                       </>
                     )}
                   </button>
-                </div>
+                </div> */}
               </div>
             </aside>
 
@@ -466,7 +512,7 @@ const BlogDetailPage = () => {
 
               {/* CONTENT */}
               <div
-                className="prose prose-lg max-w-none prose-headings:text-[#dc2626] prose-p:text-gray-700 prose-li:text-gray-700 prose-headings:font-bold text-justify"
+                className="prose prose-lg max-w-none prose-headings:text-[#dc2626] prose-p:text-gray-700 prose-li:text-gray-700 prose-headings:font-bold text-justify [&_p[id]]:scroll-mt-28"
                 dangerouslySetInnerHTML={{
                   __html: blog.content,
                 }}
@@ -489,25 +535,27 @@ const BlogDetailPage = () => {
 
             {/* AUTHOR */}
             <aside className="lg:col-span-3">
-              <div className="sticky top-24">
+               {/* SHARE */}
                 <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
-                  <div className="w-20 h-20 rounded-full bg-[#dc2626] text-white flex items-center justify-center text-3xl font-bold mx-auto mb-5">
-                    {blog.author.name.charAt(0)}
-                  </div>
+                  <h3 className="font-bold text-lg mb-5">Share Article</h3>
 
-                  <div className="text-center">
-                    <h3 className="text-xl font-bold">{blog.author.name}</h3>
-
-                    <p className="text-[#dc2626] font-medium mt-1">
-                      {blog.author.role}
-                    </p>
-
-                    <p className="text-gray-600 text-sm leading-7 mt-4">
-                      {blog.author.bio}
-                    </p>
-                  </div>
+                  <button
+                    onClick={handleCopyLink}
+                    className="w-full flex items-center justify-center gap-2 bg-[#dc2626] text-white py-3 rounded-xl hover:bg-[#b91c1c] transition"
+                  >
+                    {copied ? (
+                      <>
+                        <Check className="w-4 h-4" />
+                        Copied
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="w-4 h-4" />
+                        Copy Link
+                      </>
+                    )}
+                  </button>
                 </div>
-              </div>
             </aside>
           </div>
         </div>

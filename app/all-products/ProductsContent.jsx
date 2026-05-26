@@ -149,7 +149,7 @@ export default function ProductsContent() {
               </div>
             </motion.div>
 
-            <div className="py-12">
+            {/* <div className="py-12">
               <div className="text-center mb-10">
                 <span className="text-xs tracking-[0.4em] uppercase font-semibold text-[#e21d23]">
                   Applications & Industries
@@ -203,7 +203,7 @@ export default function ProductsContent() {
                   </motion.div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </AnimatePresence>
         </div>
       </section>
