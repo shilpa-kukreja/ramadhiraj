@@ -8,18 +8,18 @@ export default function PrivacyPolicyPage() {
   return (
     <>
     <Navbar/>
- <section className="relative overflow-hidden bg-white py-24 mt-8">
+ <section className="relative overflow-hidden bg-white py-27 mt-8">
       {/* Background Effects */}
 
       <div className="relative max-w-5xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           {/* <div className="inline-flex items-center gap-2 bg-[#e21d23]/10 text-[#e21d23] px-5 py-2 rounded-full text-sm font-semibold mb-5">
             <ShieldCheck className="w-4 h-4" />
             Privacy & Security
           </div> */}
 
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-medium text-gray-900 leading-tight">
             Privacy Policy
           </h1>
 
@@ -30,7 +30,7 @@ export default function PrivacyPolicyPage() {
         <div className="bg-white border border-gray-100 shadow-xl rounded-3xl p-8 md:p-12 space-y-12">
           {/* Intro */}
           <div>
-            <p className="text-gray-700 leading-relaxed text-[17px]">
+            <p className="text-gray-700 leading-relaxed text-[17px] text-justify">
               At <strong>Ramadhiraj Power Systems Pvt. Ltd.</strong>, we are
               committed to protecting the privacy and security of our customers,
               website visitors, and business partners. This Privacy Policy
@@ -91,7 +91,7 @@ export default function PrivacyPolicyPage() {
               Information Protection
             </h2>
 
-            <p className="text-gray-700 leading-relaxed text-[16px]">
+            <p className="text-gray-700 leading-relaxed text-[16px] text-justify">
               We implement appropriate security measures to protect your
               personal information from unauthorized access, misuse,
               disclosure, or alteration. Your information is handled with
@@ -105,7 +105,7 @@ export default function PrivacyPolicyPage() {
               Third-Party Sharing
             </h2>
 
-            <p className="text-gray-700 leading-relaxed text-[16px]">
+            <p className="text-gray-700 leading-relaxed text-[16px] text-justify">
               Ramadhiraj Power Systems Pvt. Ltd. does not sell, rent, or trade
               personal information to third parties. Information may only be
               shared when required by law or for necessary business operations
@@ -125,7 +125,7 @@ export default function PrivacyPolicyPage() {
               </h2>
             </div>
 
-            <p className="text-gray-700 leading-relaxed text-[16px]">
+            <p className="text-gray-700 leading-relaxed text-[16px] text-justify">
               Our website may use cookies and analytics tools to improve user
               experience, monitor website performance, and understand visitor
               preferences. Users may choose to disable cookies through browser
@@ -139,7 +139,7 @@ export default function PrivacyPolicyPage() {
               External Links
             </h2>
 
-            <p className="text-gray-700 leading-relaxed text-[16px]">
+            <p className="text-gray-700 leading-relaxed text-[16px] text-justify">
               Our website may contain links to external websites. We are not
               responsible for the privacy practices or content of third-party
               websites.
@@ -152,7 +152,7 @@ export default function PrivacyPolicyPage() {
               User Rights
             </h2>
 
-            <p className="text-gray-700 leading-relaxed text-[16px]">
+            <p className="text-gray-700 leading-relaxed text-[16px] text-justify">
               Users may request access, correction, or removal of their
               personal information by contacting us directly through our
               official communication channels.
@@ -165,7 +165,7 @@ export default function PrivacyPolicyPage() {
               Policy Updates
             </h2>
 
-            <p className="text-gray-700 leading-relaxed text-[16px]">
+            <p className="text-gray-700 leading-relaxed text-[16px] text-justify">
               Ramadhiraj Power Systems Pvt. Ltd. reserves the right to update or
               modify this Privacy Policy at any time. Changes will be reflected
               on this page.

@@ -127,8 +127,8 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-6 sm:py-20 py-12 grid gap-20 lg:grid-cols-2 items-start">
           {/* ===== LEFT INFO ===== */}
           <div>
-            <h2 className="text-3xl sm:text-5xl font-bold text-text mb-5">
-              Get In Touch
+            <h2 className="text-3xl sm:text-4xl font-medium text-text mb-5">
+              Get In <span className="text-red-600">Touch</span>
             </h2>
 
             <p className="text-gray-700 mb-4 text-justify max-w-xl leading-relaxed">
@@ -173,7 +173,7 @@ Uttar Pradesh- 201301"
 
           {/* ===== RIGHT FORM ===== */}
           <div className="bg-white border border-gray-200 rounded-md p-8 shadow-lg">
-            <h3 className="text-4xl font-bold text-gray-900 mb-8">
+            <h3 className="text-4xl font-medium text-gray-900 mb-4">
               Reach Out To Us
             </h3>
 

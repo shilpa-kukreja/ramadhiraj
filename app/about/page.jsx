@@ -408,7 +408,7 @@ export default function About() {
                 transition={{ duration: 0.8 }}
                 className="mb-8"
               >
-                <h2 className="text-4xl lg:text-5xl font-extrabold text-[#1b3163] leading-tight relative">
+                <h2 className="text-4xl lg:text-4xl font-medium text-[#1b3163] leading-tight relative">
                   Company <span className="text-red-600">Overview</span>
                 </h2>
 
@@ -690,7 +690,7 @@ export default function About() {
               transition={{ duration: 0.9 }}
               className="mb-8 text-center"
             >
-              <h2 className="mx-auto max-w-4xl text-3xl font-extrabold leading-tight text-gray-900 md:text-4xl">
+              <h2 className="mx-auto max-w-4xl text-3xl font-medium leading-tight text-gray-900 md:text-4xl">
                 Mission, Vision &
                 <span className="text-red-600"> Core Values</span>
               </h2>
@@ -771,7 +771,7 @@ export default function About() {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.8 }}
                     >
-                      <h3 className="mb-4 text-2xl font-extrabold text-gray-900 md:text-3xl">
+                      <h3 className="mb-4 text-2xl font-medium text-gray-900 md:text-3xl">
                         Our <span className="text-red-600">Mission</span>
                       </h3>
 
@@ -791,7 +791,7 @@ export default function About() {
                       whileHover={{ y: -8 }}
                       className="rounded-[28px] border border-gray-100 bg-gradient-to-br from-gray-50 to-white p-8 shadow-lg"
                     >
-                      <h4 className="mb-4 text-2xl font-bold text-gray-900">
+                      <h4 className="mb-4 text-2xl font-medium text-gray-900">
                         Safety Commitment
                       </h4>
 
@@ -818,7 +818,7 @@ export default function About() {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.8 }}
                     >
-                      <h3 className="mb-4 text-2xl font-extrabold text-gray-900 md:text-3xl">
+                      <h3 className="mb-4 text-2xl font-medium text-gray-900 md:text-3xl">
                         Our <span className="text-red-600">Vision</span>
                       </h3>
 
@@ -838,7 +838,7 @@ export default function About() {
                       whileHover={{ y: -8 }}
                       className="rounded-[28px] border border-gray-100 bg-gradient-to-br from-gray-50 to-white p-8 shadow-lg"
                     >
-                      <h4 className="mb-4 text-2xl font-bold text-gray-900">
+                      <h4 className="mb-4 text-2xl font-medium text-gray-900">
                         Future Ready Approach
                       </h4>
 
@@ -865,7 +865,7 @@ export default function About() {
                       transition={{ duration: 0.7 }}
                       className="mb-10 text-center"
                     >
-                      <h3 className="text-3xl font-extrabold text-gray-900">
+                      <h3 className="text-3xl font-medium text-gray-900">
                         Our Core <span className="text-red-600">Values</span>
                       </h3>
                     </motion.div>
@@ -920,7 +920,7 @@ export default function About() {
         <section className="py-12 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl font-medium mb-4">
                 Delivering Reliable{" "}
                 <span style={{ color: "#e21d23" }}>
                   Industrial Lighting Solutions
@@ -984,7 +984,7 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false }}
                   transition={{ duration: 1, delay: 0.2 }}
-                  className="text-3xl md:text-5xl font-black text-gray-900 mt-2 leading-tight text-center"
+                  className="text-3xl md:text-4xl font-medium text-gray-900 mt-2 leading-tight text-center"
                 >
                   Company{" "}
                   <span className="text-[#e21d23] inline-block">
@@ -1050,9 +1050,9 @@ export default function About() {
         </section>
 
         {/* Leadership Team */}
-        <section className="py-12 bg-gray-50 overflow-hidden">
+        {/* <section className="py-12 bg-gray-50 overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Heading */}
+            
             <motion.div
               initial={{ opacity: 0, y: 70 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -1085,7 +1085,7 @@ export default function About() {
               </motion.p>
             </motion.div>
 
-            {/* Team Grid */}
+          
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {teamMembers.map((member, index) => (
                 <motion.div
@@ -1102,9 +1102,9 @@ export default function About() {
                   }}
                   className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
                 >
-                  {/* Image Section */}
+            
                   <div className="h-64 bg-gradient-to-br from-gray-200 to-gray-300 relative overflow-hidden">
-                    {/* Animated Background Glow */}
+                
                     <motion.div
                       initial={{ scale: 0.8, opacity: 0 }}
                       whileInView={{ scale: 1, opacity: 0.2 }}
@@ -1113,7 +1113,7 @@ export default function About() {
                       className="absolute inset-0 bg-red-500 blur-3xl"
                     />
 
-                    {/* Placeholder Image */}
+                
                     <motion.div
                       initial={{ scale: 0.7, opacity: 0 }}
                       whileInView={{ scale: 1, opacity: 1 }}
@@ -1127,8 +1127,9 @@ export default function About() {
                       👤
                     </motion.div>
                   </div>
+                
 
-                  {/* Content */}
+
                   <div className="p-6">
                     <motion.h3
                       initial={{ opacity: 0, y: 20 }}
@@ -1183,7 +1184,7 @@ export default function About() {
                       {member.bio}
                     </motion.p>
 
-                    {/* Social Icons */}
+                
                     <motion.div
                       initial={{ opacity: 0, y: 15 }}
                       whileInView={{ opacity: 1, y: 0 }}
@@ -1235,15 +1236,15 @@ export default function About() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Certifications Section */}
 
-        <section className="relative overflow-hidden py-12 bg-white">
+        <section className="relative overflow-x-hidden overflow-y-hidden py-12 bg-white">
           {/* Background Effects */}
           <div className="absolute bottom-0 right-0 w-72 h-72 rounded-full blur-3xl opacity-40"></div>
 
-          <div className="relative max-w-9xl mx-auto">
+          <div className="relative max-w-9xl mx-auto overflow-y-hidden">
             {/* Heading */}
             {/* Heading */}
             <motion.div
@@ -1272,7 +1273,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false }}
                 transition={{ duration: 0.9, delay: 0.2 }}
-                className="text-3xl md:text-5xl font-black text-gray-900 leading-tight"
+                className="text-3xl md:text-4xl font-medium text-gray-900 leading-tight"
               >
                 Certifications &{" "}
                 <motion.span
@@ -1292,7 +1293,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="mx-auto mt-4 max-w-2xl text-sm md:text-base font-medium leading-relaxed text-gray-600"
+                className="mx-auto mt-4 max-w-xl text-sm md:text-base font-medium leading-relaxed text-gray-600"
               >
                 Committed to delivering reliable industrial emergency lighting
                 solutions aligned with quality, safety, and industry-focused
@@ -1310,54 +1311,56 @@ export default function About() {
                 />
               </div>
             </motion.div>
-            {/* MARQUEE */}
-            <div className="relative overflow-hidden">
-              {/* Left Fade */}
-              <div className="absolute left-0 top-0 z-10 h-full w-24 bg-gradient-to-r from-white to-transparent"></div>
+            {/* MARQUEE — react-fast-marquee avoids CSS -50% loop gaps */}
+            <div className="relative overflow-x-hidden overflow-y-hidden">
+              <Marquee
+                pauseOnHover
+                speed={45}
+                autoFill
+                gradient
+                gradientColor="#ffffff"
+                gradientWidth={96}
+                className="py-2 overflow-y-hidden"
+                style={{ overflowY: "hidden" }}
+              >
+                {certifications.map((cert) => (
+                  <div
+                    key={cert.id}
+                    className="group mx-4 flex w-[250px] shrink-0 cursor-pointer flex-col overflow-hidden rounded-[20px] border border-gray-100 bg-white shadow-md transition-all duration-500 hover:shadow-2xl"
+                    onClick={() => setSelectedImage(cert)}
+                  >
+                    <div className="relative h-48 w-full overflow-hidden bg-gray-50">
+                      <Image
+                        src={cert.image}
+                        alt={cert.name}
+                        fill
+                        loading="eager"
+                        className="object-cover transition duration-500 group-hover:scale-110"
+                        sizes="250px"
+                        quality={90}
+                      />
 
-              {/* Right Fade */}
-              <div className="absolute right-0 top-0 z-10 h-full w-24 bg-gradient-to-l from-white to-transparent"></div>
-
-              <div className="marquee-wrapper">
-                <div className="marquee-track min-w-max">
-                  {[...certifications, ...certifications].map((cert, index) => (
-                    <div
-                      key={index}
-                      className="group mx-4 flex min-w-[250px] w-[250px] mb-5 flex-shrink-0 cursor-pointer flex-col overflow-hidden rounded-[20px] border border-gray-100 bg-white shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
-                      onClick={() => setSelectedImage(cert)}
-                    >
-                      {/* Image */}
-                      <div className="relative h-[280px] overflow-hidden bg-gray-50">
-                        <img
-                          src={cert.image}
-                          alt={cert.name}
-                          className="h-80 w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        />
-
-                        {/* Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/5 to-transparent"></div>
-                      </div>
-
-                      {/* Content */}
-                      <div className="p-5 text-center">
-                        <h3 className="text-[15px] font-extrabold uppercase tracking-wide text-gray-900 transition-colors duration-300 group-hover:text-red-600">
-                          {cert.name}
-                        </h3>
-
-                        <p className="mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-gray-400">
-                          {cert.issuer}
-                        </p>
-                      </div>
+                      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
                     </div>
-                  ))}
-                </div>
-              </div>
+
+                    <div className="p-5 text-center">
+                      <h3 className="text-[15px] font-extrabold uppercase tracking-wide text-gray-900 transition-colors duration-300 group-hover:text-red-600">
+                        {cert.name}
+                      </h3>
+
+                      <p className="mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-gray-400">
+                        {cert.issuer}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </Marquee>
             </div>
           </div>
 
           {/* IMAGE PREVIEW MODAL */}
           {selectedImage && (
-            <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
+            <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 p-4">
               {/* Close Button */}
               {/* Close Button */}
               <button
@@ -1367,13 +1370,19 @@ export default function About() {
                 <X className="h-6 w-6" />
               </button>
 
-              {/* Preview Card */}
-              <div className="relative w-full max-w-5xl overflow-hidden rounded-3xl bg-white shadow-2xl">
-                <img
-                  src={selectedImage.image}
-                  alt={selectedImage.name}
-                  className="max-h-[85vh] w-full object-contain bg-white"
-                />
+              {/* Preview Card — Next Image fill + object-contain (gallery-style preview) */}
+              <div className="relative flex w-full max-w-5xl flex-col overflow-hidden rounded-3xl bg-white shadow-2xl">
+                <div className="relative mx-auto h-[75vh] w-full max-w-3xl bg-gray-50">
+                  <Image
+                    src={selectedImage.image}
+                    alt={selectedImage.name}
+                    fill
+                    className="object-contain p-4"
+                    sizes="(max-width: 768px) 100vw, 768px"
+                    quality={100}
+                    priority
+                  />
+                </div>
 
                 <div className="border-t border-gray-100 p-6 text-center">
                   <h3 className="text-2xl font-black text-gray-900">
@@ -1388,36 +1397,6 @@ export default function About() {
             </div>
           )}
 
-          {/* STYLES */}
-          <style jsx>{`
-            .marquee-wrapper {
-              width: 100%;
-              overflow: hidden;
-              position: relative;
-            }
-
-            .marquee-track {
-              display: flex;
-              align-items: stretch;
-              width: fit-content;
-              animation: marquee 35s linear infinite;
-              will-change: transform;
-            }
-
-            .marquee-wrapper:hover .marquee-track {
-              animation-play-state: paused;
-            }
-
-            @keyframes marquee {
-              from {
-                transform: translateX(0);
-              }
-
-              to {
-                transform: translateX(-50%);
-              }
-            }
-          `}</style>
         </section>
 
         {/* CTA Section */}
@@ -1429,9 +1408,9 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.2 }}
               transition={{ duration: 0.9 }}
-              className="text-3xl md:text-4xl font-bold text-white mb-4"
+              className="text-3xl md:text-4xl font-medium text-white mb-4"
             >
-              Looking for Reliable Industrial Lighting Solutions?
+              Looking for Reliable <span className="text-[#e21d23] ">Industrial Lighting Solutions?</span>
             </motion.h2>
 
             {/* Paragraph */}
@@ -1440,7 +1419,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-xl text-gray-300 mb-8"
+              className="text-lg text-gray-300 mb-8"
             >
               Connect with our team to discover dependable emergency lighting
               systems designed for industrial safety, visibility, and

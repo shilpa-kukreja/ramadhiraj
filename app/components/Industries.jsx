@@ -161,7 +161,7 @@ export default function Industries() {
             INDUSTRIES WE SERVE
           </span>
 
-          <h2 className="mt-5 text-4xl font-semibold leading-tight text-gray-900 md:text-5xl">
+          <h2 className="mt-5 text-4xl font-medium leading-tight text-gray-900 md:text-4xl">
             Supporting Safety Across
             <span className="text-[#e21d23]"> Essential Industries</span>
           </h2>

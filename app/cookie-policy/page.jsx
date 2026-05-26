@@ -15,18 +15,18 @@ export default function CookiePolicyPage() {
   return (
     <>
       <Navbar />
-      <section className="relative overflow-hidden bg-white py-24 mt-8">
+      <section className="relative overflow-hidden bg-white py-27 mt-8">
         {/* Background Effects */}
 
         <div className="relative max-w-5xl mx-auto px-6 lg:px-8">
           {/* Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             {/* <div className="inline-flex items-center gap-2 bg-[#e21d23]/10 text-[#e21d23] px-5 py-2 rounded-full text-sm font-semibold mb-5">
               <Cookie className="w-4 h-4" />
               Website Policies
             </div> */}
 
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-medium text-gray-900 leading-tight">
               Cookie Policy
             </h1>
 
@@ -39,7 +39,7 @@ export default function CookiePolicyPage() {
           <div className="bg-white border border-gray-100 shadow-xl rounded-3xl p-8 md:p-12 space-y-12">
             {/* Intro */}
             <div>
-              <p className="text-gray-700 leading-relaxed text-[17px]">
+              <p className="text-gray-700 leading-relaxed text-[17px] text-justify">
                 This Cookie Policy explains how{" "}
                 <strong>Ramadhiraj Power Systems Pvt. Ltd.</strong> uses cookies
                 and similar technologies on our website to improve user
@@ -64,7 +64,7 @@ export default function CookiePolicyPage() {
                 </h2>
               </div>
 
-              <p className="text-gray-700 leading-relaxed text-[16px]">
+              <p className="text-gray-700 leading-relaxed text-[16px] text-justify">
                 Cookies are small text files stored on your device when you
                 visit a website. They help websites remember user preferences,
                 improve browsing experience, and analyze website performance.
@@ -143,7 +143,7 @@ export default function CookiePolicyPage() {
                     Analytics Cookies
                   </h3>
 
-                  <p className="text-gray-700 leading-relaxed text-[16px]">
+                  <p className="text-gray-700 leading-relaxed text-[16px]  text-justify">
                     These cookies help us analyze website traffic, page
                     performance, and visitor engagement to improve our website
                     and services.
@@ -164,7 +164,7 @@ export default function CookiePolicyPage() {
                 </h2>
               </div>
 
-              <p className="text-gray-700 leading-relaxed text-[16px]">
+              <p className="text-gray-700 leading-relaxed text-[16px] text-justify">
                 Our website may use trusted third-party services such as
                 analytics or embedded content providers that may place cookies
                 on your device. These third-party cookies are governed by their

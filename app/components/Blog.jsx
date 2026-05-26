@@ -99,7 +99,7 @@ export default function Blog() {
             Our Blog
           </span>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-medium text-gray-900 leading-tight">
             Latest <span className="text-[#e21d23]">Insights</span> & Articles
           </h2>
 

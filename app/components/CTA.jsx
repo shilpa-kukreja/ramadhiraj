@@ -49,7 +49,7 @@ export default function CTA() {
         <div className="text-center">
           {/* Main Heading */}
           <h2
-            className={`text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+            className={`text-3xl md:text-4xl lg:text-4xl font-medium text-white mb-4 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
           >
             Power Your Facility with{" "}
             <span style={{ color: "#e21d23" }}>Reliable Safety Lighting Solutions</span>

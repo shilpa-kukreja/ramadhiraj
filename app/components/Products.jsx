@@ -33,7 +33,7 @@ export default function Products() {
               OUR PRODUCT PORTFOLIO
             </span>
 
-            <h2 className="text-4xl md:text-4xl lg:text-4xl font-semibold text-gray-900 mt-5 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-4xl font-semibold text-gray-900 mt-5 leading-tight">
               Industrial Emergency
               <span className="text-[#e21d23]"> Lighting Solutions</span>
             </h2>
@@ -97,8 +97,7 @@ export default function Products() {
 
                       <div className="p-7">
                         <div className="mb-5">
-                          <div className="w-12 h-[2px] bg-[#e21d23] mb-5" />
-
+                          <div className="w-12 group-hover:w-34 h-[2px] bg-[#e21d23] mb-5 transition-all duration-500" />
                           <h3 className="text-[18px] font-semibold text-gray-900 leading-snug line-clamp-1">
                             {product.name}
                           </h3>

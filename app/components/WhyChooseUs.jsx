@@ -71,8 +71,9 @@ export default function WhyChooseUs() {
             Why Ramadhiraj
           </span>
 
-          <h2 className="text-4xl md:text-4xl font-semibold text-gray-900 mt-5">
-            Built for Industrial Safety & Reliable Performance
+          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mt-5">
+            Built for Industrial              <span className="text-[#e21d23]"> Safety & Reliable Performance</span>
+
           </h2>
 
           <p className="text-gray-600 mt-6 max-w-5xl mx-auto text-lg leading-relaxed ">

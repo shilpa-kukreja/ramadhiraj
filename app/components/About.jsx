@@ -69,11 +69,12 @@ export default function About() {
 
           <motion.h2
             variants={fadeUp}
-            className="text-4xl md:text-4xl font-semibold text-gray-900 mt-4 leading-tight"
+            className="text-3xl md:text-4xl font-semibold text-gray-900 mt-4 leading-tight"
           >
             Engineering Safety with
             <br />
-            Precision & Reliability
+             <span className="text-[#e21d23]"> Precision & Reliability</span>
+            
           </motion.h2>
 
           <motion.p

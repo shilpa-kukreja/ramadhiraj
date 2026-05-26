@@ -139,7 +139,7 @@ export default function Testimonials() {
           >
             Client Testimonials
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">
+          <h2 className="text-3xl md:text-4xl font-medium text-gray-900 mt-2 mb-4">
             What Our <span style={{ color: "#e21d23" }}>Clients Say</span>
           </h2>
           <div
