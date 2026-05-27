@@ -62,9 +62,9 @@ export default function Footer() {
             {/* Brand */}
             <div>
               <img
-                src="/logo/Logo-Web-a1.png"
+                src="/logo/footerlogo.png"
                 alt="Logo"
-                className="w-36 mb-5"
+                className="w-25 mb-5"
               />
 
               <p className="text-gray-400 text-sm leading-relaxed mb-6 text-justify">
