@@ -36,12 +36,12 @@ export default function ProductsContent() {
   return (
     <>
       <Navbar />
-      <section className="w-full sm:mt-30">
+      <section className="w-full">
         <div className=" w-full">
           <img
             src="/allproduct/banner.jpg"
             alt="Industrial lighting banner"
-            className="w-full h-40 sm:h-90 object-cover"
+            className="w-full h-[220px] sm:h-[300px] md:h-[400px] lg:h-[320px] object-cover object-center"
           />
         </div>
       </section>

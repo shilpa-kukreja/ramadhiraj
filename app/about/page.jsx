@@ -311,13 +311,13 @@ export default function About() {
   return (
     <>
       <Navbar />
-      <main className=" mt-25">
-        <div className="py-3 text-sm text-center">
-          <div className=" mx-auto ">
+      <main className=" ">
+        <div className=" text-sm text-center">
+          <div className="mx-auto w-full overflow-hidden">
             <img
               src="/about/aboutusbanner.jpg"
               alt="Info"
-              className="inline-block w-full h-[400px] mr-2"
+              className="w-full h-[220px] sm:h-[300px] md:h-[400px] object-cover object-center"
             />
           </div>
         </div>
@@ -1330,18 +1330,18 @@ export default function About() {
                     onClick={() => setSelectedImage(cert)}
                   >
                     <div className="relative aspect-[3/4] w-full overflow-hidden bg-gray-50 p-3">
-  <Image
-    src={cert.image}
-    alt={cert.name}
-    fill
-    loading="eager"
-    className="object-contain transition duration-500 group-hover:scale-105"
-    sizes="250px"
-    quality={90}
-  />
+                      <Image
+                        src={cert.image}
+                        alt={cert.name}
+                        fill
+                        loading="eager"
+                        className="object-contain transition duration-500 group-hover:scale-105"
+                        sizes="250px"
+                        quality={90}
+                      />
 
-  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
-</div>
+                      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
+                    </div>
 
                     <div className="p-5 text-center">
                       <h3 className="text-[15px] font-extrabold uppercase tracking-wide text-gray-900 transition-colors duration-300 group-hover:text-red-600">
@@ -1396,7 +1396,6 @@ export default function About() {
               </div>
             </div>
           )}
-
         </section>
 
         {/* CTA Section */}
@@ -1410,7 +1409,10 @@ export default function About() {
               transition={{ duration: 0.9 }}
               className="text-3xl md:text-4xl font-medium text-white mb-4"
             >
-              Looking for Reliable <span className="text-[#e21d23] ">Industrial Lighting Solutions?</span>
+              Looking for Reliable{" "}
+              <span className="text-[#e21d23] ">
+                Industrial Lighting Solutions?
+              </span>
             </motion.h2>
 
             {/* Paragraph */}

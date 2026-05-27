@@ -177,7 +177,7 @@ export default function EnquirySideModal() {
               exit={{ x: "100%" }}
               transition={{ duration: 0.4, ease: "easeInOut" }}
               className="absolute right-0 top-1/2 -translate-y-1/2
-              h-[50vh] max-h-[50vh] w-full sm:w-[420px]
+              h-[70vh] max-h-[70vh] w-full sm:w-[420px]
               bg-white shadow-2xl rounded-l-2xl overflow-hidden flex flex-col"
             >
               {/* Header */}
@@ -258,9 +258,9 @@ export default function EnquirySideModal() {
 
                   {/* Name */}
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    {/* <label className="block text-sm font-medium text-gray-700 mb-2">
                       Name
-                    </label>
+                    </label> */}
 
                     <input
                       type="text"
@@ -283,9 +283,9 @@ export default function EnquirySideModal() {
 
                   {/* Email */}
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    {/* <label className="block text-sm font-medium text-gray-700 mb-2">
                       Email
-                    </label>
+                    </label> */}
 
                     <input
                       type="email"
@@ -308,9 +308,9 @@ export default function EnquirySideModal() {
 
                   {/* Phone */}
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    {/* <label className="block text-sm font-medium text-gray-700 mb-2">
                       Phone Number
-                    </label>
+                    </label> */}
 
                     <input
                       type="tel"
@@ -333,9 +333,9 @@ export default function EnquirySideModal() {
 
                   {/* Message */}
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    {/* <label className="block text-sm font-medium text-gray-700 mb-2">
                       Message
-                    </label>
+                    </label> */}
 
                     <textarea
                       rows="4"

@@ -26,7 +26,8 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-210 flex items-center overflow-hidden sm:mt-28">
+    <section className="relative h-[55vh] sm:h-[65vh] md:h-[75vh] lg:h-[90vh] flex items-center overflow-hidden mt-0">
+      {" "}
       {/* IMAGE SLIDER */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
@@ -39,15 +40,13 @@ export default function Hero() {
             <img
               src={slide}
               alt={`Hero Slide ${index + 1}`}
-              className="w-full h-210 object-cover"
+              className="w-full h-full object-cover object-center"
             />
-
             {/* DARK OVERLAY */}
             <div className="absolute inset-0 " />
           </div>
         ))}
       </div>
-
       {/* Simple Background Pattern */}
       <div className="absolute inset-0 opacity-5 z-[1]">
         <div
@@ -59,7 +58,6 @@ export default function Hero() {
           }}
         />
       </div>
-
       {/* CONTENT */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
         <div className="max-w-3xl mx-auto text-center">

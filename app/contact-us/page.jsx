@@ -103,25 +103,16 @@ export default function ContactPage() {
     <>
       <Navbar />
 
-      <section className=" text-gray-800 sm:mt-30">
-        <section className="w-full">
-          <div className=" w-full">
-            {/* <video
-              src="/indusyt"
-              alt="Eric AI CRA"
-
-        autoPlay
-        muted
-        loop
-        playsInline
-              className="w-full h-40 sm:h-90 object-cover"
-            /> */}
-            <img
-              src="/contact/banner.jpg"
-              className="w-full h-40 sm:h-90 object-cover"
-            />
-          </div>
-        </section>
+      <section className="text-gray-800">
+   <section className="w-full overflow-hidden">
+  <div className="w-full">
+    <img
+      src="/contact/banner.jpg"
+      alt="Contact Banner"
+      className="w-full h-[220px] sm:h-[320px] md:h-[450px] lg:h-[350px] object-cover object-center"
+    />
+  </div>
+</section>
 
         {/* ===== MAIN SECTION ===== */}
         <div className="max-w-7xl mx-auto px-6 sm:py-20 py-12 grid gap-20 lg:grid-cols-2 items-start">
