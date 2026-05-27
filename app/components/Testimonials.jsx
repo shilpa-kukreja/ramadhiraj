@@ -20,7 +20,7 @@ export default function Testimonials() {
       rating: 5,
       content:
         "The emergency lighting systems delivered by Ramadhiraj have performed exceptionally well across our manufacturing facility. Reliable products and professional support throughout the project.",
-      image: "R",
+      image: "/testimonials/1.jpg",
       date: "March 2024",
     },
     {
@@ -32,7 +32,7 @@ export default function Testimonials() {
       rating: 5,
       content:
         "We were looking for dependable industrial lighting solutions for our warehouse operations, and Ramadhiraj delivered exactly what we needed with excellent quality and timely execution.",
-      image: "P",
+      image: "/testimonials/2.jpg",
       date: "January 2024",
     },
     {
@@ -44,7 +44,7 @@ export default function Testimonials() {
       rating: 5,
       content:
         "Their emergency lighting products are durable, efficient, and perfectly suited for industrial environments. The overall experience was smooth and highly professional.",
-      image: "A",
+      image: "/testimonials/3.jpg",
       date: "December 2023",
     },
     {
@@ -56,7 +56,7 @@ export default function Testimonials() {
       rating: 4,
       content:
         "Ramadhiraj provided reliable lighting solutions for our commercial infrastructure project. The product quality and response time were highly impressive.",
-      image: "S",
+      image: "/testimonials/4.jpeg",
       date: "November 2023",
     },
     {
@@ -68,7 +68,7 @@ export default function Testimonials() {
       rating: 5,
       content:
         "The team understood our operational requirements clearly and delivered lighting systems that matched our industrial safety expectations perfectly.",
-      image: "N",
+      image: "/testimonials/5.jpg",
       date: "October 2023",
     },
     {
@@ -80,7 +80,7 @@ export default function Testimonials() {
       rating: 5,
       content:
         "Excellent product quality backed by strong technical support. Their emergency lighting systems have improved operational visibility and safety across our unit.",
-      image: "V",
+      image: "/testimonials/6.jpg",
       date: "September 2023",
     },
   ];
@@ -188,12 +188,11 @@ export default function Testimonials() {
 
               {/* Client Info */}
               <div className="flex items-center gap-3">
-                <div
-                  className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg"
-                  style={{ backgroundColor: "#e21d23" }}
-                >
-                  {testimonial.image}
-                </div>
+                <img
+  src={testimonial.image}
+  alt={testimonial.name}
+  className="w-12 h-12 rounded-full object-cover"
+/>
                 <div>
                   <h4 className="font-bold text-gray-800">
                     {testimonial.name}

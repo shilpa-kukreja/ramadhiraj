@@ -49,7 +49,7 @@ const allBlogsData = {
       </p>
     `,
 
-    image: "/blog/image3.png",
+    image: "/blog/1.jpg",
 
     author: {
       name: "Priya Sharma",
@@ -125,7 +125,7 @@ At Ramadhiraj Power Systems, we provide industrial emergency lighting solutions 
     
     `,
 
-    image: "/blog/image4.png",
+    image: "/blog/2.jpg",
 
     author: {
       name: "Rajesh Kumar",
@@ -200,7 +200,7 @@ At Ramadhiraj Power Systems, we provide industrial emergency lighting solutions 
       </p>
     `,
 
-    image: "/blog/image2.png",
+    image: "/blog/3.jpg",
 
     author: {
       name: "Amit Verma",
@@ -285,7 +285,7 @@ At Ramadhiraj Power Systems, we provide dependable industrial safety lighting so
       </p>
     `,
 
-    image: "/blog/image1.png",
+    image: "/blog/4.jpg",
 
     author: {
       name: "Dr. Anil Mehta",

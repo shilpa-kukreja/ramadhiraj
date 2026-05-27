@@ -261,7 +261,7 @@ export default function About() {
       name: "ISO 9001:2024",
       issuer: "International Organization for Standardization",
       description: "Quality Management Systems Certification",
-      image: "/certificates/01.jpg",
+      image: "/certificates/1.jpg",
       date: "2024",
       validUntil: "2027",
       status: "Active",
@@ -271,37 +271,37 @@ export default function About() {
       name: "BIS Certification",
       issuer: "Bureau of Indian Standards",
       description: "Certified for Emergency Lighting Systems",
-      image: "/certificates/02.jpg",
+      image: "/certificates/2.jpg",
       date: "2023",
       validUntil: "2026",
       status: "Active",
     },
     {
       id: 3,
-      name: "ISO 45001:2023",
-      issuer: "International Organization for Standardization",
+      name: "ISO 14001:2015",
+      issuer: "Environment Management System",
       description: "Occupational Health & Safety Management",
-      image: "/certificates/03.jpg",
+      image: "/certificates/3.jpg",
       date: "2023",
       validUntil: "2026",
       status: "Active",
     },
     {
       id: 4,
-      name: "CE Certification",
-      issuer: "European Union",
+      name: "ISO 9001:2015",
+      issuer: "Quality Management System",
       description: "Conformity with European Safety Standards",
-      image: "/certificates/04.jpg",
+      image: "/certificates/4.jpg",
       date: "2024",
       validUntil: "2028",
       status: "Active",
     },
     {
       id: 5,
-      name: "NSIC Registered",
+      name: "ISO 10322:2013",
       issuer: "National Small Industries Corporation",
       description: "Government Registered Vendor",
-      image: "/certificates/05.jpg",
+      image: "/certificates/5.jpg",
       date: "2022",
       validUntil: "2027",
       status: "Active",
@@ -1329,26 +1329,26 @@ export default function About() {
                     className="group mx-4 flex w-[250px] shrink-0 cursor-pointer flex-col overflow-hidden rounded-[20px] border border-gray-100 bg-white shadow-md transition-all duration-500 hover:shadow-2xl"
                     onClick={() => setSelectedImage(cert)}
                   >
-                    <div className="relative h-48 w-full overflow-hidden bg-gray-50">
-                      <Image
-                        src={cert.image}
-                        alt={cert.name}
-                        fill
-                        loading="eager"
-                        className="object-cover transition duration-500 group-hover:scale-110"
-                        sizes="250px"
-                        quality={90}
-                      />
+                    <div className="relative aspect-[3/4] w-full overflow-hidden bg-gray-50 p-3">
+  <Image
+    src={cert.image}
+    alt={cert.name}
+    fill
+    loading="eager"
+    className="object-contain transition duration-500 group-hover:scale-105"
+    sizes="250px"
+    quality={90}
+  />
 
-                      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
-                    </div>
+  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
+</div>
 
                     <div className="p-5 text-center">
                       <h3 className="text-[15px] font-extrabold uppercase tracking-wide text-gray-900 transition-colors duration-300 group-hover:text-red-600">
                         {cert.name}
                       </h3>
 
-                      <p className="mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-gray-400">
+                      <p className="mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-gray-400 line-clamp-1">
                         {cert.issuer}
                       </p>
                     </div>
@@ -1365,14 +1365,14 @@ export default function About() {
               {/* Close Button */}
               <button
                 onClick={() => setSelectedImage(null)}
-                className="fixed top-4 right-4 md:top-5 md:right-5 z-[10000] flex h-12 w-12 items-center justify-center rounded-full bg-white text-black shadow-2xl transition hover:scale-110"
+                className="fixed top-4 right-7 md:top-5 md:right-[600px] z-[10000] flex h-12 w-12 items-center justify-center rounded-full bg-white text-black shadow-2xl transition hover:scale-110"
               >
                 <X className="h-6 w-6" />
               </button>
 
               {/* Preview Card — Next Image fill + object-contain (gallery-style preview) */}
-              <div className="relative flex w-full max-w-5xl flex-col overflow-hidden rounded-3xl bg-white shadow-2xl">
-                <div className="relative mx-auto h-[75vh] w-full max-w-3xl bg-gray-50">
+              <div className="relative flex w-full max-w-xl flex-col overflow-hidden rounded-3xl bg-gray-100 shadow-2xl">
+                <div className="relative mx-auto h-[75vh] w-full ">
                   <Image
                     src={selectedImage.image}
                     alt={selectedImage.name}
