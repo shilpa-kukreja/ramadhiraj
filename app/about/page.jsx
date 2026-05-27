@@ -505,7 +505,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.2 }}
               transition={{ duration: 1, delay: 0.2 }}
-              className="relative mt-2 sm:mt-28"
+              className="relative mt-2 sm:mt-24"
             >
               <motion.div
                 initial={{ scale: 0.7, opacity: 0 }}
