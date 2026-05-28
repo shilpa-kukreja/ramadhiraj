@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
-import Navbar from "./Navbar";
+
 import {
   categories,
   defaultCategoryId,
@@ -18,7 +18,7 @@ export default function Products() {
 
   return (
     <>
-      <Navbar />
+      
 
       <section className="relative py-24 sm:mt-10 bg-gray-100 overflow-hidden">
         <div className="max-w-[1500px] mx-auto px-6 lg:px-10 relative z-10">
