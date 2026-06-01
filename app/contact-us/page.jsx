@@ -109,7 +109,7 @@ export default function ContactPage() {
     <img
       src="/contact/banner.jpg"
       alt="Contact Banner"
-      className="w-full h-[220px] sm:h-[320px] md:h-[450px] lg:h-[350px] object-cover object-center"
+      className="w-full  sm:h-[320px] md:h-[450px] lg:h-[350px] object-cover object-center"
     />
   </div>
 </section>

@@ -311,13 +311,13 @@ export default function About() {
   return (
     <>
       <Navbar />
-      <main className=" ">
+      <main className=" sm:h-[65vh] md:h-[75vh] lg:h-[90vh]">
         <div className=" text-sm text-center">
           <div className="mx-auto w-full overflow-hidden">
             <img
               src="/about/aboutusbanner.jpg"
               alt="Info"
-              className="w-full h-[220px] sm:h-[300px] md:h-[400px] object-cover object-center"
+              className="w-full h-full object-cover object-center"
             />
           </div>
         </div>

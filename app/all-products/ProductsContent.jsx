@@ -41,12 +41,12 @@ export default function ProductsContent() {
           <img
             src="/allproduct/banner.jpg"
             alt="Industrial lighting banner"
-            className="w-full h-[220px] sm:h-[300px] md:h-[400px] lg:h-[320px] object-cover object-center"
+            className="w-full  sm:h-[300px] md:h-[400px] lg:h-[320px] object-cover object-center"
           />
         </div>
       </section>
       <section className="relative py-12 bg-gray-100 overflow-hidden">
-        <div className="max-w-[1500px] mx-auto px-6 lg:px-10 relative z-10">
+        <div className="max-w-[1500px] mx-auto lg:px-10 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 70 }}
             whileInView={{ opacity: 1, y: 0 }}

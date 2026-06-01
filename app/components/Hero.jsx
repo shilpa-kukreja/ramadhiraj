@@ -26,7 +26,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-[55vh] sm:h-[65vh] md:h-[75vh] lg:h-[90vh] flex items-center overflow-hidden mt-0">
+    <section className="relative  sm:h-[65vh] md:h-[75vh] lg:h-[90vh] flex items-center overflow-hidden mt-0">
       {" "}
       {/* IMAGE SLIDER */}
       <div className="absolute inset-0">

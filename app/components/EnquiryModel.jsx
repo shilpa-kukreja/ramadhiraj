@@ -177,7 +177,7 @@ export default function EnquirySideModal() {
               exit={{ x: "100%" }}
               transition={{ duration: 0.4, ease: "easeInOut" }}
               className="absolute right-0 top-1/2 -translate-y-1/2
-              h-[70vh] max-h-[70vh] w-full sm:w-[420px]
+               w-full sm:w-[420px]
               bg-white shadow-2xl rounded-l-2xl overflow-hidden flex flex-col"
             >
               {/* Header */}
@@ -187,9 +187,9 @@ export default function EnquirySideModal() {
                     Get Consultation
                   </h2>
 
-                  <p className="text-white/80 text-sm mt-1">
+                  {/* <p className="text-white/80 text-sm mt-1">
                     Fill the form and our team will contact you.
-                  </p>
+                  </p> */}
                 </div>
 
                 <button

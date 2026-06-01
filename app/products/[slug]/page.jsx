@@ -75,7 +75,7 @@ export default function ProductDetailPage() {
     <>
       <Navbar />
 
-      <section className="bg-gray-50 min-h-screen pt-28 pb-16 sm:mt-10">
+      <section className="bg-gray-50 min-h-screen pt-10 pb-16 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
           <Link
             href="/all-products"
@@ -185,15 +185,15 @@ export default function ProductDetailPage() {
 
                       <div className="p-5">
                         <div className="w-10 h-[2px] bg-[#e21d23] mb-4" />
-                        <h3 className="text-lg font-semibold text-gray-900 line-clamp-2">
+                        <h3 className="text-lg font-semibold text-gray-900 line-clamp-1">
                           {item.name}
                         </h3>
-                        <p className="text-sm text-gray-500 mt-2 line-clamp-2">
+                        {/* <p className="text-sm text-gray-500 mt-2 line-clamp-2">
                           {item.specs}
                         </p>
                         <p className="text-[#e21d23] font-semibold mt-3">
                           {item.price}
-                        </p>
+                        </p> */}
                         <span className="relative mt-4 flex items-center justify-center overflow-hidden w-full py-3 rounded-md bg-[#e21d23] text-white text-sm font-medium text-center group-hover:bg-red-700 transition">
                           {/* Shine Effect */}
                           <span className="absolute top-0 left-[-120%] h-full w-[35%] animate-shine bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></span>
