@@ -86,7 +86,7 @@ const industries = [
 function IndustryCard({ industry, index, visible }) {
   return (
     <article
-      className={`group relative h-[430px] overflow-hidden rounded-[26px] transition-transform duration-300 ease-out hover:-translate-y-1.5 ${
+      className={`group relative h-[240px] md:h-[430px] overflow-hidden rounded-[18px] md:rounded-[26px] transition-transform duration-300 ease-out hover:-translate-y-1.5 ${
         visible ? "industry-card-enter" : "opacity-0"
       }`}
       style={
@@ -100,7 +100,7 @@ function IndustryCard({ industry, index, visible }) {
           src={industry.image}
           alt={industry.name}
           fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 25vw"
           className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
           loading="lazy"
           quality={75}
@@ -108,15 +108,18 @@ function IndustryCard({ industry, index, visible }) {
       </div>
 
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/35 to-black/10" />
-      <div className="absolute inset-0 rounded-[26px] border border-white/10" />
+      <div className="absolute inset-0 rounded-[18px] md:rounded-[26px] border border-white/10" />
+
       <div className="absolute left-0 top-0 h-[3px] w-0 bg-[#e21d23] transition-[width] duration-500 ease-out group-hover:w-full" />
 
-      <div className="absolute inset-0 flex flex-col justify-end p-7">
-        <div className="mb-5 h-[2px] w-[55px] bg-[#e21d23] transition-[width] duration-500 ease-out group-hover:w-[100px]" />
-        <h3 className="mb-3 text-[26px] font-semibold leading-tight text-white">
+      <div className="absolute inset-0 flex flex-col justify-end p-3 md:p-7">
+        <div className="mb-2 md:mb-5 h-[2px] w-[35px] md:w-[55px] bg-[#e21d23] transition-[width] duration-500 ease-out group-hover:w-[70px] md:group-hover:w-[100px]" />
+
+        <h3 className="mb-2 md:mb-3 text-sm md:text-[26px] font-semibold leading-tight text-white line-clamp-2">
           {industry.name}
         </h3>
-        <p className="text-sm leading-relaxed text-white/80">
+
+        <p className="hidden md:block text-sm leading-relaxed text-white/80">
           {industry.description}
         </p>
       </div>
@@ -173,8 +176,7 @@ export default function Industries() {
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {industries.map((industry, index) => (
+<div className="grid grid-cols-2 gap-3 md:gap-6 lg:grid-cols-4">          {industries.map((industry, index) => (
             <IndustryCard
               key={industry.id}
               industry={industry}

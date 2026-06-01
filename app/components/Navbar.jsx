@@ -404,9 +404,9 @@ export default function Navbar() {
 
                   {/* NAME */}
                   <div>
-                    <label className="block text-sm font-medium mb-2">
+                    {/* <label className="block text-sm font-medium mb-2">
                       Name
-                    </label>
+                    </label> */}
 
                     <input
                       type="text"
@@ -421,9 +421,9 @@ export default function Navbar() {
 
                   {/* EMAIL */}
                   <div>
-                    <label className="block text-sm font-medium mb-2">
+                    {/* <label className="block text-sm font-medium mb-2">
                       Email
-                    </label>
+                    </label> */}
 
                     <input
                       type="email"
@@ -438,9 +438,9 @@ export default function Navbar() {
 
                   {/* PHONE */}
                   <div>
-                    <label className="block text-sm font-medium mb-2">
+                    {/* <label className="block text-sm font-medium mb-2">
                       Phone Number
-                    </label>
+                    </label> */}
 
                     <input
                       type="tel"
@@ -455,9 +455,9 @@ export default function Navbar() {
 
                   {/* MESSAGE */}
                   <div>
-                    <label className="block text-sm font-medium mb-2">
+                    {/* <label className="block text-sm font-medium mb-2">
                       Message
-                    </label>
+                    </label> */}
 
                     <textarea
                       rows="4"

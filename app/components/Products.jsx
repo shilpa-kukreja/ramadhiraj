@@ -4,7 +4,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
-
 import {
   categories,
   defaultCategoryId,
@@ -18,8 +17,6 @@ export default function Products() {
 
   return (
     <>
-      
-
       <section className="relative py-24 sm:mt-10 bg-gray-100 overflow-hidden">
         <div className="max-w-[1500px] mx-auto px-6 lg:px-10 relative z-10">
           <motion.div
@@ -70,7 +67,8 @@ export default function Products() {
               exit={{ opacity: 0, y: 15 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+                {" "}
                 {activeProducts.map((product, index) => (
                   <Link
                     key={product.id}
@@ -87,7 +85,8 @@ export default function Products() {
                       }}
                       className="relative bg-white rounded-[14px] overflow-hidden border border-gray-100 hover:-translate-y-2 transition-all duration-700 h-full"
                     >
-                      <div className="relative h-[260px] overflow-hidden">
+                      <div className="relative h-[140px] md:h-[260px] overflow-hidden">
+                        {" "}
                         <img
                           src={getProductImageSrc(product.image)}
                           alt={product.name}
@@ -95,10 +94,11 @@ export default function Products() {
                         />
                       </div>
 
-                      <div className="p-7">
+                      <div className="p-3 md:p-7">
                         <div className="mb-5">
                           <div className="w-12 group-hover:w-34 h-[2px] bg-[#e21d23] mb-5 transition-all duration-500" />
-                          <h3 className="text-[18px] font-semibold text-gray-900 leading-snug line-clamp-1">
+                          <h3 className="text-sm md:text-[18px] font-semibold text-gray-900 leading-snug line-clamp-2 md:line-clamp-1">
+                            {" "}
                             {product.name}
                           </h3>
                         </div>
@@ -111,7 +111,8 @@ export default function Products() {
                           {/* Shine Effect */}
                           <span className="absolute top-0 left-[-120%] h-full w-[50%] animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 z-10" />
 
-                          <span className="relative block w-full py-3.5 rounded-md bg-[#e21d23] text-white font-medium text-center group-hover:bg-red-700 transition">
+                          <span className="relative block w-full py-2 md:py-3.5 rounded-md bg-[#e21d23] text-white text-xs md:text-base font-medium text-center group-hover:bg-red-700 transition">
+                            {" "}
                             View Product
                           </span>
                         </div>
