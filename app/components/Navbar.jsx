@@ -71,9 +71,6 @@ export default function Navbar() {
     "Explosion Proof Unit",
   ];
 
-  const API_BASE_URL =
-    process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000";
-
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [loading, setLoading] = useState(false);
@@ -101,10 +98,10 @@ export default function Navbar() {
     try {
       setLoading(true);
 
-      const response = await axios.post(
-        `${API_BASE_URL}/api/product-enquiry`,
-        formData,
-      );
+      const response = await axios.post("/api/product-enquiry", {
+        ...formData,
+        formSource: "consultation",
+      });
 
       if (response.data.success) {
         setSubmitMessage("Enquiry submitted successfully!");

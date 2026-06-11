@@ -36,9 +36,6 @@ export default function EnquirySideModal() {
     "Explosion Proof Unit",
   ];
 
-  const API_BASE_URL =
-    process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000";
-
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -87,10 +84,10 @@ export default function EnquirySideModal() {
     try {
       setLoading(true);
 
-      const response = await axios.post(
-        `${API_BASE_URL}/api/product-enquiry`,
-        formData
-      );
+      const response = await axios.post("/api/product-enquiry", {
+        ...formData,
+        formSource: "enquiry-now",
+      });
 
       if (response.data.success) {
         setMessage({

@@ -23,9 +23,6 @@ export default function ContactPage() {
   });
   const [loading, setLoading] = useState(false);
   const [submitStatus, setSubmitStatus] = useState({ type: "", message: "" });
-  const API_BASE_URL =
-    process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000";
-
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -63,10 +60,7 @@ export default function ContactPage() {
     setSubmitStatus({ type: "", message: "" });
 
     try {
-      const response = await axios.post(
-        `${API_BASE_URL}/api/contact`,
-        formData,
-      );
+      const response = await axios.post("/api/contact", formData);
 
       if (response.data.success) {
         setSubmitStatus({

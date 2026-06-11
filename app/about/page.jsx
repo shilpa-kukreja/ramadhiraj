@@ -486,7 +486,7 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false }}
                   transition={{ duration: 0.7, delay: 0.3 }}
-                  className="text-gray-700 text-justify leading-relaxed mb-2"
+                  className="text-gray-700 leading-relaxed mb-2"
                 >
                   <span className="font-medium text-red-600 text-2xl">
                     Ramadhiraj Power Systems Private Limited.

@@ -9,11 +9,6 @@ export default function ProductEnquiryModal({
   onClose,
   productName = "",
 }) {
-  const API_BASE_URL =
-    process.env.NEXT_PUBLIC_BACKEND_URL ||
-    process.env.NEXT_PUBLIC_API_URL ||
-    "http://localhost:5000";
-
   const [loading, setLoading] = useState(false);
   const [submitMessage, setSubmitMessage] = useState("");
   const [formData, setFormData] = useState({
@@ -50,10 +45,10 @@ export default function ProductEnquiryModal({
     try {
       setLoading(true);
 
-      const response = await axios.post(
-        `${API_BASE_URL}/api/product-enquiry`,
-        formData,
-      );
+      const response = await axios.post("/api/product-enquiry", {
+        ...formData,
+        formSource: "product-enquiry",
+      });
 
       if (response.data.success) {
         setSubmitMessage("Enquiry submitted successfully!");
