@@ -123,9 +123,9 @@ export default function About() {
   // Sample values data (replace with your actual content)
   const companyValues = [
     {
-      title: "Innovation",
+      title: "Safety First",
       description:
-        "Continuously developing advanced industrial lighting solutions designed for modern safety and operational requirements.",
+        "Protecting lives through dependable lighting solutions.",
       color: "#e21d23",
       icon: (
         <svg
@@ -144,9 +144,9 @@ export default function About() {
       ),
     },
     {
-      title: "Reliability",
+      title: "Quality Excellence",
       description:
-        "Delivering dependable emergency lighting systems built for consistent long-term performance.",
+        "Maintaining the highest manufacturing standards.",
       color: "#0891b2",
       icon: (
         <svg
@@ -165,9 +165,9 @@ export default function About() {
       ),
     },
     {
-      title: "Quality Commitment",
+      title: "Innovation",
       description:
-        "Focused on maintaining high manufacturing standards across every product and solution.",
+        "Continuously improving products through technology and research.",
       color: "#7c3aed",
       icon: (
         <svg
@@ -188,7 +188,49 @@ export default function About() {
     {
       title: "Customer Focus",
       description:
-        "Building trusted relationships through responsive support, product excellence, and reliable service.",
+        "Building long-term relationships through trust and service.",
+      color: "#ea580c",
+      icon: (
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+          />
+        </svg>
+      ),
+    },
+     {
+      title: "Integrity",
+      description:
+        "Conducting business with honesty and transparency.",
+      color: "#ea580c",
+      icon: (
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+          />
+        </svg>
+      ),
+    }, 
+    {
+      title: "Sustainability",
+      description:
+        " Promoting energy-efficient and environmentally responsible solutions.",
       color: "#ea580c",
       icon: (
         <svg
@@ -444,17 +486,11 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false }}
                   transition={{ duration: 0.7, delay: 0.3 }}
-                  className="text-gray-700 text-justify leading-relaxed mb-6"
+                  className="text-gray-700 text-justify leading-relaxed mb-2"
                 >
-                  <span className="font-extrabold text-red-600 ">
-                    Ramadhiraj
+                  <span className="font-medium text-red-600 text-2xl">
+                    Ramadhiraj Power Systems Private Limited.
                   </span>{" "}
-                  Group of Companies is committed to delivering reliable
-                  industrial solutions driven by quality, innovation, and
-                  performance. Under Ramadhiraj Power Systems Pvt. Ltd., we
-                  specialize in manufacturing industrial emergency lighting
-                  systems engineered for critical environments where safety and
-                  uninterrupted visibility are essential.{" "}
                 </motion.p>
 
                 <motion.p
@@ -462,12 +498,13 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false }}
                   transition={{ duration: 0.7, delay: 0.5 }}
-                  className="text-gray-700 text-justify leading-relaxed mb-6"
+                  className="text-gray-700 text-justify leading-relaxed mb-6 "
                 >
-                  With a strong focus on durability, efficiency, and dependable
-                  performance, our solutions are trusted across factories,
-                  warehouses, infrastructure projects, healthcare facilities,
-                  transportation networks, and commercial spaces.{" "}
+                  Is a leading manufacturer of Emergency Exit Lights, Emergency
+                  Lighting Systems, LED Flood Lights, and LED Street Lights. We
+                  are committed to delivering innovative, reliable, and
+                  energy-efficient lighting solutions that enhance safety,
+                  security, and sustainability.{" "}
                 </motion.p>
 
                 <motion.p
@@ -475,17 +512,16 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false }}
                   transition={{ duration: 0.7, delay: 0.7 }}
-                  className="text-gray-700 text-justify leading-relaxed mb-6"
+                  className="text-gray-700 text-justify leading-relaxed mb-6 "
                 >
-                  Backed by advanced manufacturing capabilities and industry
-                  expertise, we continue to provide lighting solutions that
-                  support operational safety, compliance, and long-term
-                  reliability. Our commitment to product quality and customer
-                  satisfaction helps us build lasting partnerships across
-                  diverse industrial sectors.
+                  With a focus on quality manufacturing, advanced technology,
+                  and customer satisfaction, we provide dependable products for
+                  commercial buildings, industries, educational institutions,
+                  healthcare facilities, infrastructure projects, and public
+                  spaces across India.
                 </motion.p>
 
-                <motion.p
+                {/* <motion.p
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false }}
@@ -495,7 +531,7 @@ export default function About() {
                   At Ramadhiraj, we believe in creating lighting systems that
                   not only perform efficiently but also contribute to safer and
                   more secure working environments.
-                </motion.p>
+                </motion.p> */}
               </motion.div>
             </motion.div>
 
@@ -507,25 +543,25 @@ export default function About() {
               transition={{ duration: 1, delay: 0.2 }}
               className="relative mt-2 sm:mt-24"
             >
-              <motion.div
+              {/* <motion.div
                 initial={{ scale: 0.7, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 viewport={{ once: false }}
                 transition={{ duration: 1 }}
                 className="absolute top-10 -left-5 w-28 h-28 bg-red-100 rounded-full blur-3xl opacity-70"
-              />
+              /> */}
 
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: false }}
                 transition={{ duration: 1 }}
-                className="relative h-[580px] w-full overflow-hidden rounded-[24px]"
+                className="relative h-[363px] w-full overflow-hidden rounded-[24px]"
               >
                 <img
-                  src="/about/2.jpg"
+                  src="/about/2.jpeg"
                   alt="CEO Sanjeev Arora"
-                  className="object-cover object-top h-full w-full hover:scale-105 transition-transform duration-700"
+                  className="object-cover object-top  w-full hover:scale-105 transition-transform duration-700"
                 />
               </motion.div>
             </motion.div>
@@ -663,6 +699,7 @@ export default function About() {
           </div>
         </section> */}
 
+{/* misson vision and core values  */}
         <section className="relative overflow-hidden bg-gray-100 py-12 lg:py-12">
           {/* Background Effects */}
           <motion.div
@@ -775,11 +812,12 @@ export default function About() {
                         Our <span className="text-red-600">Mission</span>
                       </h3>
 
-                      <p className="text-sm font-medium leading-8 text-gray-600 md:text-base">
-                        To deliver dependable industrial emergency lighting
-                        systems that enhance workplace safety, operational
-                        visibility, and long-term reliability across critical
-                        environments.
+                      <p className="text-sm font-medium leading-8 text-gray-600 md:text-base text-justify">
+                        To manufacture world-class emergency and LED lighting
+                        solutions that ensure safety, reliability, and energy
+                        efficiency while creating lasting value for our
+                        customers through innovation, quality, and service
+                        excellence.
                       </p>
                     </motion.div>
 
@@ -795,7 +833,7 @@ export default function About() {
                         Safety Commitment
                       </h4>
 
-                      <p className="text-sm font-medium leading-7 text-gray-600 md:text-base">
+                      <p className="text-sm font-medium leading-7 text-gray-600 md:text-base text-justify">
                         We focus on developing high-performance lighting
                         solutions engineered to support safer industrial
                         operations and uninterrupted emergency preparedness.
@@ -822,11 +860,11 @@ export default function About() {
                         Our <span className="text-red-600">Vision</span>
                       </h3>
 
-                      <p className="text-sm font-medium leading-8 text-gray-600 md:text-base">
-                        To become a trusted name in industrial emergency
-                        lighting by delivering innovative, energy-efficient, and
-                        reliable lighting solutions for modern industrial and
-                        infrastructure environments.
+                      <p className="text-sm font-medium leading-8 text-gray-600 md:text-base text-justify">
+                        To become a globally recognized and trusted brand in
+                        emergency lighting and LED illumination solutions,
+                        setting industry benchmarks in safety, innovation,
+                        quality, and sustainable manufacturing.
                       </p>
                     </motion.div>
 
@@ -842,7 +880,7 @@ export default function About() {
                         Future Ready Approach
                       </h4>
 
-                      <p className="text-sm font-medium leading-7 text-gray-600 md:text-base">
+                      <p className="text-sm font-medium leading-7 text-gray-600 md:text-base text-justify">
                         We are committed to developing advanced lighting systems
                         that support operational safety, long-term performance,
                         and evolving industrial requirements with a strong focus
@@ -870,7 +908,7 @@ export default function About() {
                       </h3>
                     </motion.div>
 
-                    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-6">
                       {companyValues.map((value, index) => (
                         <motion.div
                           key={index}
@@ -915,6 +953,76 @@ export default function About() {
             </motion.div>
           </div>
         </section>
+
+{/* Why Choose Us */}
+<section className="py-12 bg-white overflow-hidden">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    {/* Heading */}
+    <div className="text-center mb-12">
+      <h2 className="text-3xl md:text-4xl font-medium text-gray-900">
+        Why <span className="text-red-600">Choose Us</span>
+      </h2>
+
+      <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
+        Delivering dependable lighting solutions with a strong commitment to
+        quality, innovation, safety, and customer satisfaction.
+      </p>
+
+      <div className="w-20 h-1 bg-red-600 mx-auto mt-5 rounded-full"></div>
+    </div>
+
+    <div className="grid lg:grid-cols-2 gap-8">
+
+      {[
+        "High-quality and reliable lighting products.",
+        "Advanced manufacturing and quality control processes.",
+        "Energy-efficient and sustainable solutions.",
+        "Innovative product design and technology.",
+        "Customer-centric approach and dedicated support.",
+        "Timely delivery and dependable service.",
+        "Trusted partner for commercial, industrial, and infrastructure projects.",
+        "Commitment to safety, performance, and long-term value."
+      ].map((item, index) => (
+        <div
+          key={index}
+          className="group bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+        >
+          <div className="flex items-start gap-4">
+
+            {/* Icon */}
+            <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center group-hover:bg-red-600 transition-all duration-300">
+              <svg
+                className="w-6 h-6 text-red-600 group-hover:text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+            </div>
+
+            {/* Content */}
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                {item}
+              </h3>
+            </div>
+
+          </div>
+        </div>
+      ))}
+
+    </div>
+  </div>
+</section>
+
+
 
         {/* Statistics Counter Section */}
         <section className="py-12 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
@@ -1474,8 +1582,8 @@ export default function About() {
             </motion.div>
           </div>
         </section>
+        <Footer />
       </main>
-      <Footer />
     </>
   );
 }
