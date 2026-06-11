@@ -148,12 +148,12 @@ export default function Footer() {
 
                 <div className="flex gap-3">
                   <HiOutlineLocationMarker className="text-[#e21d23] text-3xl" />
-                  <p>UGF-73, Signature Street, Govindpuram, Ghaziabad – 201013</p>
+                  <p>A35/A Sector 67 Noida Uttar Pradesh - 201309</p>
                 </div>
 
                 <div className="flex gap-3">
                   <HiOutlinePhone className="text-[#e21d23] text-lg" />
-                  <p>+91 74288 55573</p>
+                  <p>+91 7428855574</p>
                 </div>
 
                 <div className="flex gap-3">

@@ -163,11 +163,11 @@ export default function Navbar() {
                 </a>
 
                 <a
-                  href="tel:+919999999999"
+                  href="tel:+917428855574"
                   className="flex items-center gap-2 hover:text-white transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>+91 7428855573</span>
+                  <span>+91 7428855574</span>
                 </a>
               </div>
             </div>

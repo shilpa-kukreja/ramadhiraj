@@ -131,7 +131,7 @@ export default function ContactPage() {
               <InfoBox
                 icon={<Phone size={20} />}
                 title="Phone Number"
-                value="+91 7428855573,+91 7428855574"
+                value="+91 7428855574, +91 7428855573"
               />
               <InfoBox
                 icon={<Mail size={20} />}
@@ -142,16 +142,12 @@ export default function ContactPage() {
               <InfoBox
                 icon={<MapPin size={20} className="w-20 " />}
                 title="Registered Office Address"
-                value="UGF-73, Signature Street, Govindpuram,
-
-Ghaziabad – 201013"
+                value="A35/A Sector 67 Noida Uttar Pradesh - 201309"
               />
               <InfoBox
                 icon={<Factory size={20} className="w-20 " />}
                 title="Manufacturing Unit Address"
-                value="Plot No- B 59, Sector- 69, Noida,
-
-Uttar Pradesh- 201301"
+                value="A35/A Sector 67 Noida Uttar Pradesh - 201309"
               />
             </div>
           </div>

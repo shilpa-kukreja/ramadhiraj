@@ -95,7 +95,7 @@ export default function CTA() {
 
             {/* Secondary Button */}
             <button className="px-6 py-2 rounded-lg font-semibold text-white border-2 border-white hover:bg-white hover:text-gray-900 transition-all duration-300">
-              Call Us: +91 74288 55573
+              Call Us: +91 7428855574
             </button>
           </div>
         </div>
