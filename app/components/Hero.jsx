@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = ["/hero/1.jpg", "/hero/2.jpg"];
+  const slides = ["/hero/1.jpeg", "/hero/2.jpeg","/hero/3.png","/hero/4.png"];
 
   useEffect(() => {
     const interval = setInterval(() => {
