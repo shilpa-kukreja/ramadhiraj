@@ -153,7 +153,7 @@ export default function Footer() {
 
                 <div className="flex gap-3">
                   <HiOutlinePhone className="text-[#e21d23] text-lg" />
-                  <p>+91 7428855574</p>
+                  <p>+91 7428855574, +91 7428855573</p>
                 </div>
 
                 <div className="flex gap-3">

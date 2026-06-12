@@ -300,9 +300,9 @@ export default function About() {
   const certifications = [
     {
       id: 1,
-      name: "ISO 9001:2024",
-      issuer: "International Organization for Standardization",
-      description: "Quality Management Systems Certification",
+      name: "CE/25M02718",
+      issuer: "MQA Certification",
+      description: "MQA Certification",
       image: "/certificates/1.jpg",
       date: "2024",
       validUntil: "2027",
@@ -310,8 +310,8 @@ export default function About() {
     },
     {
       id: 2,
-      name: "BIS Certification",
-      issuer: "Bureau of Indian Standards",
+      name: "ROHS/25M02717",
+      issuer: "MQA Certification",
       description: "Certified for Emergency Lighting Systems",
       image: "/certificates/2.jpg",
       date: "2023",
@@ -340,8 +340,8 @@ export default function About() {
     },
     {
       id: 5,
-      name: "ISO 10322:2013",
-      issuer: "National Small Industries Corporation",
+      name: "IS 10322(PART 5/SEC 8):2013",
+      issuer: "BUREAU OF INDIAN STANDARDS",
       description: "Government Registered Vendor",
       image: "/certificates/5.jpg",
       date: "2022",
@@ -1452,11 +1452,11 @@ export default function About() {
                     </div>
 
                     <div className="p-5 text-center">
-                      <h3 className="text-[15px] font-extrabold uppercase tracking-wide text-gray-900 transition-colors duration-300 group-hover:text-red-600">
+                      <h3 className="text-[15px] font-bold uppercase tracking-wide text-gray-900 transition-colors duration-300 group-hover:text-red-600 line-clamp-1">
                         {cert.name}
                       </h3>
 
-                      <p className="mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-gray-400 line-clamp-1">
+                      <p className="mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-gray-700 line-clamp-1">
                         {cert.issuer}
                       </p>
                     </div>
