@@ -43,6 +43,14 @@ export default function Footer() {
     name: "Street Light",
     href: "/all-products?category=street",
   },
+   {
+    name: "Signboard",
+    href: "/all-products?category=signboard",
+  }, {
+    name: "Signage",
+    href: "/all-products?category=signage",
+  },
+    
 ],
   };
 

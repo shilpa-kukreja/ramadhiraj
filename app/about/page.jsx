@@ -301,7 +301,7 @@ export default function About() {
     {
       id: 1,
       name: "CE/25M02718",
-      issuer: "MQA Certification",
+      issuer: "Low Volage Directive (LVD) 2014/35/EU, Machinery Directive (2006/42/EC)",
       description: "MQA Certification",
       image: "/certificates/1.jpg",
       date: "2024",
@@ -311,7 +311,7 @@ export default function About() {
     {
       id: 2,
       name: "ROHS/25M02717",
-      issuer: "MQA Certification",
+      issuer: "Rohs Directive (2011/65/EU)",
       description: "Certified for Emergency Lighting Systems",
       image: "/certificates/2.jpg",
       date: "2023",
@@ -1456,9 +1456,9 @@ export default function About() {
                         {cert.name}
                       </h3>
 
-                      <p className="mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-gray-700 line-clamp-1">
+                      {/* <p className="mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-gray-700 line-clamp-1">
                         {cert.issuer}
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                 ))}
@@ -1497,7 +1497,7 @@ export default function About() {
                     {selectedImage.name}
                   </h3>
 
-                  <p className="mt-2 text-sm font-semibold uppercase tracking-[0.25em] text-red-600">
+                  <p className="mt-2 text-sm font-semibold uppercase  text-red-600">
                     {selectedImage.issuer}
                   </p>
                 </div>
