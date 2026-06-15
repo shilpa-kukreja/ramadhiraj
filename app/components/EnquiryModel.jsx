@@ -4,19 +4,16 @@ import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import axios from "axios";
 import { AnimatePresence, motion } from "framer-motion";
-import {
-  X,
-  Loader2,
-  Send,
-  CheckCircle,
-  AlertCircle,
-} from "lucide-react";
+import { X, Loader2, Send, CheckCircle, AlertCircle } from "lucide-react";
 
 export default function EnquirySideModal() {
   const productOptions = [
- "RPS-EL (NIKAS)",
+    "RPS-EL (NIKAS)",
     "RPS-EL (EXIT)",
     "RPS-EL 40W (EMERGENCY LIGHT)",
+    "RPS-EL EMERGENCY EXIT (KANNADA)",
+    "RPS-EL EMERGENCY EXIT (TAMIL)",
+    "RPS-EL EMERGENCY EXIT (ENGLISH AND HINDI)",
     "RPS-EL 40W (EXIT)",
     "RPS-EL 40W ",
     "RPS-FLP 40W (GREEN)",
@@ -31,7 +28,10 @@ export default function EnquirySideModal() {
     "STREET LIGHT 100W",
     "STREET LIGHT 200W",
     "SIGNBOARD ",
+    "SIGNBOARD (EMERGENCY EXIT)",
     "SIGNAGE",
+    "LEFT SIGNAGE",
+    "RIGHT SIGNAGE",
   ];
 
   const [open, setOpen] = useState(false);

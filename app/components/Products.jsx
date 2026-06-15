@@ -97,7 +97,7 @@ export default function Products() {
                       <div className="p-3 md:p-7">
                         <div className="mb-5">
                           <div className="w-12 group-hover:w-34 h-[2px] bg-[#e21d23] mb-5 transition-all duration-500" />
-                          <h3 className="text-sm md:text-[18px] font-semibold text-gray-900 leading-snug line-clamp-2 md:line-clamp-1">
+                          <h3 className="text-sm md:text-[18px] font-semibold text-gray-900 leading-snug line-clamp-1 md:line-clamp-1">
                             {" "}
                             {product.name}
                           </h3>

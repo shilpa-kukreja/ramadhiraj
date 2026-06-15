@@ -52,6 +52,9 @@ export default function Navbar() {
     "RPS-EL (NIKAS)",
     "RPS-EL (EXIT)",
     "RPS-EL 40W (EMERGENCY LIGHT)",
+    "RPS-EL EMERGENCY EXIT (KANNADA)",
+    "RPS-EL EMERGENCY EXIT (TAMIL)",
+    "RPS-EL EMERGENCY EXIT (ENGLISH AND HINDI)",
     "RPS-EL 40W (EXIT)",
     "RPS-EL 40W ",
     "RPS-FLP 40W (GREEN)",
@@ -66,7 +69,11 @@ export default function Navbar() {
     "STREET LIGHT 100W",
     "STREET LIGHT 200W",
     "SIGNBOARD ",
+    "SIGNBOARD (EMERGENCY EXIT)",
     "SIGNAGE",
+    "LEFT SIGNAGE",
+    "RIGHT SIGNAGE",
+
   ];
 
   const [isModalOpen, setIsModalOpen] = useState(false);
