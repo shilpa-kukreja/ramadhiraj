@@ -261,7 +261,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-medium hover:border-[#e21d23] hover:text-[#e21d23] transition-all duration-200"
               >
-                <FileText className="w-4 h-4" />
+                <FileText className="w-4 h-4"/>
                 Brochure
               </a>
 
