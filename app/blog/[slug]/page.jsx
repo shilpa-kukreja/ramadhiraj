@@ -414,7 +414,7 @@ const BlogDetailPage = () => {
     <>
       <Navbar />
 
-      <div className="bg-[#f8f8f8] min-h-screen pt-28">
+      <div className="bg-[#f8f8f8] min-h-screen">
         {/* HERO */}
         <section className="bg-gray-600 py-16">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

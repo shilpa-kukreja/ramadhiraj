@@ -80,23 +80,23 @@ export default function Footer() {
               </p>
 
               {/* Social */}
-                      <div className="flex gap-5 mt-4 text-2xl">
+              <div className="flex gap-5 mt-4 text-2xl">
 
-            <span className="cursor-pointer text-[#1877F2] hover:scale-110 transition">
+            <Link href="https://www.facebook.com/share/18vpM9Bt8v/" target="_blank" className="cursor-pointer text-[#1877F2] hover:scale-110 transition">
               <FaFacebook />
-            </span>
+            </Link>
 
-            <span className="cursor-pointer text-[#FF0000] hover:scale-110 transition">
+            <Link href="https://youtube.com/@ramadhirajpowersystems?si=f41FLPk7arWaH3Np/" target="_blank" className="cursor-pointer text-[#FF0000] hover:scale-110 transition">
               <FaYoutube />
-            </span>
+            </Link>
 
-            <span className="cursor-pointer text-[#E4405F] hover:scale-110 transition">
+            <Link href="https://www.instagram.com/ramadhirajpowersystems?igsh=emp6aTkwa2hycTFv/" target="_blank" className="cursor-pointer text-[#E4405F] hover:scale-110 transition">
               <FaInstagram />
-            </span>
+            </Link>
 
-            <span className="cursor-pointer text-white hover:scale-110 transition">
+            {/* <span className="cursor-pointer text-white hover:scale-110 transition">
               <FaSquareXTwitter />
-            </span>
+            </span> */}
 
           </div>
             </div>
